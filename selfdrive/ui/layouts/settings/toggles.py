@@ -32,6 +32,13 @@ DESCRIPTIONS = {
     "without a turn signal activated while driving over 31 mph (50 km/h)."
   ),
   "AlwaysOnDM": tr_noop("Enable driver monitoring even when sunnypilot is not engaged."),
+  # 禁用驾驶监控摄像头：当驾驶监控摄像头硬件损坏时开启此选项，
+  # 关闭摄像头及相关监控进程，避免因硬件异常导致报错无法运行。
+  "DisableDriverMonitoringCamera": tr_noop(
+    "Disable the driver monitoring camera when the camera hardware is faulty. " +
+    "This stops the camera and driver monitoring processes to prevent errors caused by the broken hardware. " +
+    "Warning: driver monitoring will not function while this is enabled."
+  ),
   'RecordFront': tr_noop("Upload data from the driver facing camera and help improve the driver monitoring algorithm."),
   "IsMetric": tr_noop("Display speed in km/h instead of mph."),
   "RecordAudio": tr_noop("Record and store microphone audio while driving. The audio will be included in the dashcam video in comma connect."),
@@ -75,6 +82,14 @@ class TogglesLayout(Widget):
         DESCRIPTIONS["AlwaysOnDM"],
         "monitoring.png",
         False,
+      ),
+      # 禁用驾驶监控摄像头开关：硬件损坏时开启，禁用摄像头及监控进程。
+      # needs_restart=True，因为该设置需要重启 sunnypilot 才能生效（影响 camerad 摄像头初始化）。
+      "DisableDriverMonitoringCamera": (
+        lambda: tr("Disable Driver Monitoring Camera"),
+        DESCRIPTIONS["DisableDriverMonitoringCamera"],
+        "monitoring.png",
+        True,
       ),
       "RecordFront": (
         lambda: tr("Record and Upload Driver Camera"),
