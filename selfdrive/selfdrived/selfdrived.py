@@ -97,6 +97,9 @@ class SelfdriveD(CruiseHelper):
     if REPLAY:
       # no vipc in replay will make them ignored anyways
       ignore += ['roadCameraState', 'wideRoadCameraState']
+    if os.getenv("DISABLE_DRIVER"):
+      # driver monitoring camera is disabled, so its camera/model messages are never published
+      ignore += ['driverCameraState', 'driverMonitoringState']
     self.sm = messaging.SubMaster(['deviceState', 'pandaStates', 'peripheralState', 'modelV2', 'liveCalibration',
                                    'carOutput', 'driverMonitoringState', 'longitudinalPlan', 'livePose', 'liveDelay',
                                    'managerState', 'liveParameters', 'radarState', 'liveTorqueParameters',

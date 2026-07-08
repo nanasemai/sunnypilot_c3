@@ -4,6 +4,8 @@ Copyright (c) 2021-, Haibin Wen, sunnypilot, and a number of other contributors.
 This file is part of sunnypilot and is licensed under the MIT License.
 See the LICENSE.md file in the root directory for more details.
 """
+import os
+
 import pyray as rl
 
 from cereal import log
@@ -40,8 +42,9 @@ class CircularAlertsRenderer:
     if not ui_state.started:
       self._standstill_elapsed_time = 0.0
 
-    self._allow_e2e_alerts = sm['selfdriveState'].alertSize == log.SelfdriveState.AlertSize.none and \
-                             sm.recv_frame['driverStateV2'] > ui_state.started_frame
+    self._allow_e2e_alerts = sm['selfdriveState'].alertSize == log.SelfdriveState.AlertSize.none
+    if not os.getenv("DISABLE_DRIVER"):
+      self._allow_e2e_alerts = self._allow_e2e_alerts and sm.recv_frame['driverStateV2'] > ui_state.started_frame
 
     if self._green_light_alert or self._lead_depart_alert:
       self._e2e_alert_display_timer = 3 * gui_app.target_fps

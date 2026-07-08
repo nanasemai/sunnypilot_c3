@@ -2,6 +2,7 @@
 
 #include <map>
 #include <memory>
+#include <set>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -219,6 +220,13 @@ void handle_preserve_segment(LoggerdState *s) {
 
 void loggerd_thread() {
   // setup messaging
+  const bool disable_driver = getenv("DISABLE_DRIVER");
+  const std::set<std::string> driver_signals = {
+    "driverCameraState", "driverEncodeIdx", "driverStateV2",
+    "driverMonitoringState", "driverEncodeData",
+    "livestreamDriverEncodeIdx", "livestreamDriverEncodeData",
+  };
+
   struct ServiceState {
     std::string name;
     int counter, freq;
@@ -236,6 +244,7 @@ void loggerd_thread() {
     const bool livestream_encoder = util::starts_with(it.name, "livestream");
     const bool record_audio = (it.name == "rawAudioData") && Params().getBool("RecordAudio");
     if (it.should_log || (encoder && !livestream_encoder) || record_audio) {
+      if (disable_driver && driver_signals.count(it.name)) continue;
       LOGD("logging %s", it.name.c_str());
 
       SubSocket * sock = SubSocket::create(ctx.get(), it.name, "127.0.0.1", false, true, it.queue_size);
@@ -261,6 +270,7 @@ void loggerd_thread() {
   std::vector<RemoteEncoder*> encoders_with_audio;
   for (const auto &cam : cameras_logged) {
     for (const auto &encoder_info : cam.encoder_infos) {
+      if (disable_driver && driver_signals.count(encoder_info.publish_name)) continue;
       encoder_infos_dict[encoder_info.publish_name] = encoder_info;
       s.max_waiting++;
     }
