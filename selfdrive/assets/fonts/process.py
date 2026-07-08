@@ -72,8 +72,9 @@ def _write_bmfont(path: Path, font_size: int, face: str, atlas_name: str, line_h
   if line_height != font_size:
     print("using font size for line height", atlas_name)
     line_height = font_size
+  spacing = "2,0" if face == "unifont" else "0,0"
   lines = [
-    f"info face=\"{face}\" size=-{font_size} bold=0 italic=0 charset=\"\" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing=0,0 outline=0",
+    f"info face=\"{face}\" size=-{font_size} bold=0 italic=0 charset=\"\" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing={spacing} outline=0",
     f"common lineHeight={line_height} base={base} scaleW={atlas_size[0]} scaleH={atlas_size[1]} pages=1 packed=0 alphaChnl=0 redChnl=4 greenChnl=4 blueChnl=4",
     f"page id=0 file=\"{atlas_name}\"",
     f"chars count={len(entries)}",
