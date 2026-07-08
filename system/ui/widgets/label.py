@@ -277,7 +277,7 @@ class UnifiedLabel(Widget):
     self._elide = elide
     self._wrap_text = wrap_text
     self._scroll = scroll
-    self._line_height = line_height * 0.9
+    self._line_height = line_height
     self._letter_spacing = letter_spacing  # 0.1 = 10%
     self._spacing_pixels = font_size * letter_spacing
 
@@ -352,9 +352,8 @@ class UnifiedLabel(Widget):
 
   def set_line_height(self, line_height: float):
     """Update line height (multiplier, e.g., 1.0 = default)."""
-    new_line_height = line_height * 0.9
-    if self._line_height != new_line_height:
-      self._line_height = new_line_height
+    if self._line_height != line_height:
+      self._line_height = line_height
       self._cached_text = None  # Invalidate cache (affects total height)
 
   def set_font_weight(self, font_weight: FontWeight):
