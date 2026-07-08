@@ -1,4 +1,5 @@
 from cereal import log
+import os
 
 from openpilot.system.ui.widgets.scroller import NavScroller
 from openpilot.selfdrive.ui.mici.widgets.button import BigParamControl, BigMultiParamToggle
@@ -21,6 +22,11 @@ class TogglesLayoutMici(NavScroller):
     record_front = BigParamControl("record & upload driver camera", "RecordFront", toggle_callback=restart_needed_callback)
     record_mic = BigParamControl("record & upload mic audio", "RecordAudio", toggle_callback=restart_needed_callback)
     enable_openpilot = BigParamControl("enable sunnypilot", "OpenpilotEnabledToggle", toggle_callback=restart_needed_callback)
+
+    disable_driver = bool(os.getenv("DISABLE_DRIVER"))
+    if disable_driver:
+      always_on_dm_toggle.set_visible(False)
+      record_front.set_visible(False)
 
     self._scroller.add_widgets([
       self._personality_toggle,

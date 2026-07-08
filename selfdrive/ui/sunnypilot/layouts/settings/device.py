@@ -4,6 +4,8 @@ Copyright (c) 2021-, Haibin Wen, sunnypilot, and a number of other contributors.
 This file is part of sunnypilot and is licensed under the MIT License.
 See the LICENSE.md file in the root directory for more details.
 """
+import os
+
 from openpilot.selfdrive.ui.layouts.settings.device import DeviceLayout
 from openpilot.selfdrive.ui.onroad.driver_camera_dialog import DriverCameraDialog
 from openpilot.selfdrive.ui.ui_state import ui_state
@@ -85,6 +87,8 @@ class DeviceLayoutSP(DeviceLayout):
       right_callback=lambda: gui_app.push_widget(DriverCameraDialog())
     )
     self._quiet_mode_and_dcam.action_item.right_button.set_button_style(ButtonStyle.NORMAL)
+    if os.getenv("DISABLE_DRIVER"):
+      self._quiet_mode_and_dcam.action_item.right_button.set_visible(False)
 
     self._reg_and_training = dual_button_item_sp(
       left_text=lambda: tr("Regulatory"),

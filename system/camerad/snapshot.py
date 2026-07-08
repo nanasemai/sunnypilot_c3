@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import subprocess
 import time
 
@@ -86,7 +87,7 @@ def snapshot():
     print("Already taking snapshot")
     return None, None
 
-  front_camera_allowed = params.get_bool("RecordFront")
+  front_camera_allowed = params.get_bool("RecordFront") and not os.getenv("DISABLE_DRIVER")
   params.put_bool("IsTakingSnapshot", True, block=True)
   set_offroad_alert("Offroad_IsTakingSnapshot", True)
   time.sleep(2.0)  # Give hardwared time to read the param, or if just started give camerad time to start

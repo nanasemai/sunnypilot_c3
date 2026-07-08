@@ -1,4 +1,5 @@
 from cereal import log
+import os
 from openpilot.common.params import Params, UnknownKeyName
 from openpilot.system.ui.widgets import Widget
 from openpilot.system.ui.widgets.list_view import multiple_button_item, toggle_item
@@ -123,7 +124,10 @@ class TogglesLayout(Widget):
 
     self._toggles = {}
     self._locked_toggles = set()
+    disable_driver = bool(os.getenv("DISABLE_DRIVER"))
     for param, (title, desc, icon, needs_restart) in self._toggle_defs.items():
+      if disable_driver and param in ("AlwaysOnDM", "RecordFront"):
+        continue
       toggle = toggle_item(
         title,
         desc,
@@ -217,10 +221,14 @@ class TogglesLayout(Widget):
     # TODO: make a param control list item so we don't need to manage internal state as much here
     # refresh toggles from params to mirror external changes
     for param in self._toggle_defs:
+      if param not in self._toggles:
+        continue
       self._toggles[param].action_item.set_state(self._params.get_bool(param))
 
     # these toggles need restart, block while engaged
     for toggle_def in self._toggle_defs:
+      if toggle_def not in self._toggles:
+        continue
       if self._toggle_defs[toggle_def][3] and toggle_def not in self._locked_toggles:
         self._toggles[toggle_def].action_item.set_enabled(not ui_state.engaged)
 
