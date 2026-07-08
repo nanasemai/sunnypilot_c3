@@ -1287,6 +1287,10 @@ msgstr "在策略模型"
 msgid "Only available when vehicle is off, or always offroad mode is on"
 msgstr "仅在车辆熄火或开启始终离车模式时可用"
 
+#: selfdrive/ui/sunnypilot/layouts/settings/vehicle/brands/tesla.py
+msgid "Only works above {} {}."
+msgstr "仅在 {} {} 以上时有效。"
+
 #: selfdrive/ui/sunnypilot/layouts/settings/display.py
 msgid "Onroad Brightness"
 msgstr "行车亮度"
@@ -1655,6 +1659,10 @@ msgstr "选择车辆"
 #: selfdrive/ui/sunnypilot/layouts/settings/vehicle/platform_selector.py
 msgid "Select vehicle to force fingerprint manually."
 msgstr "选择车辆以手动强制指纹识别。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/osm.py
+msgid "Select {}"
+msgstr "选择{}"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/steering_sub_layouts/torque_settings.py
 msgid "Self-Tune"
@@ -2051,6 +2059,10 @@ msgstr "唤醒行为"
 msgid "Warning"
 msgstr "警告"
 
+#: selfdrive/ui/sunnypilot/layouts/settings/vehicle/brands/tesla.py
+msgid "Warning: May experience steering oscillations below {} {} during turns, recommend disabling this feature if you experience these."
+msgstr "警告：在 {} {} 以下转弯时可能出现转向摆动，若遇到此情况建议禁用此功能。"
+
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise_sub_layouts/speed_limit_settings.py
 msgid "Warning: Provides a warning when exceeding the current road's speed limit."
 msgstr "警告：超过当前道路限速时发出警告。"
@@ -2429,6 +2441,7 @@ msgstr "sunnypilot 默认以安稳模式驾驶。实验模式会启用尚未成�
 msgid "sunnypilot is continuously calibrating, resetting is rarely required. Resetting calibration will restart sunnypilot if the car is powered on."
 msgstr "sunnypilot 会持续进行校准，很少需要重置。若车辆已通电，重置校准将重启 sunnypilot。"
 
+#: selfdrive/ui/layouts/settings/firehose.py
 #: selfdrive/ui/mici/layouts/settings/firehose.py
 msgid ""
 "sunnypilot learns to drive by watching humans, like you, drive.\n"
