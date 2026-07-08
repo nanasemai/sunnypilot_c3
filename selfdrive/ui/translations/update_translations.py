@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from itertools import chain
 import os
 from openpilot.common.basedir import BASEDIR
 from openpilot.system.ui.lib.multilang import SYSTEM_UI_DIR, UI_DIR, TRANSLATIONS_DIR, multilang
@@ -11,13 +10,15 @@ POT_FILE = os.path.join(str(TRANSLATIONS_DIR), "app.pot")
 
 def update_translations():
   files = []
-  for root, _, filenames in chain(os.walk(SYSTEM_UI_DIR),
-                                  os.walk(os.path.join(UI_DIR, "widgets")),
-                                  os.walk(os.path.join(UI_DIR, "layouts")),
-                                  os.walk(os.path.join(UI_DIR, "onroad"))):
-    for filename in filenames:
-      if filename.endswith(".py"):
-        files.append(os.path.relpath(os.path.join(root, filename), BASEDIR))
+  # 扫描整个 UI 代码树（system/ui 与 selfdrive/ui），覆盖 sunnypilot、mici 等所有子目录，
+  # 避免遗漏未被翻译提取的界面字符串。排除 tests 与 translations 目录。
+  for base_dir in (SYSTEM_UI_DIR, str(UI_DIR)):
+    for root, _, filenames in os.walk(base_dir):
+      if os.sep + "tests" in root or os.sep + "translations" in root:
+        continue
+      for filename in filenames:
+        if filename.endswith(".py"):
+          files.append(os.path.relpath(os.path.join(root, filename), BASEDIR))
 
   # Extract translatable strings and generate .pot template
   entries = extract_strings(files, BASEDIR)
