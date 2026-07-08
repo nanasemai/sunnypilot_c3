@@ -37,6 +37,9 @@ def _char_sets():
   return tuple(sorted(ord(c) for c in base)), tuple(sorted(ord(c) for c in unifont))
 
 
+def _is_cjk(codepoint: int) -> bool:
+  return 0x4e00 <= codepoint <= 0x9fff
+
 def _glyph_metrics(glyphs, rects, glyph_count: int, extra_spacing: int = 0):
   entries = []
   min_offset_y, max_extent = None, 0
@@ -48,6 +51,7 @@ def _glyph_metrics(glyphs, rects, glyph_count: int, extra_spacing: int = 0):
     offset_y = int(round(glyph.offsetY))
     min_offset_y = offset_y if min_offset_y is None else min(min_offset_y, offset_y)
     max_extent = max(max_extent, offset_y + height)
+    spacing_add = extra_spacing if _is_cjk(glyph.value) else 0
     entries.append({
       "id": glyph.value,
       "x": int(round(rect.x)),
@@ -56,7 +60,7 @@ def _glyph_metrics(glyphs, rects, glyph_count: int, extra_spacing: int = 0):
       "height": height,
       "xoffset": int(round(glyph.offsetX)),
       "yoffset": offset_y,
-      "xadvance": int(round(glyph.advanceX)) + extra_spacing,
+      "xadvance": int(round(glyph.advanceX)) + spacing_add,
     })
 
   if min_offset_y is None:
