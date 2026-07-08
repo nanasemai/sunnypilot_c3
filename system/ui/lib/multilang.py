@@ -2,6 +2,7 @@ from importlib.resources import files
 import json
 import os
 import re
+from pathlib import Path
 from openpilot.common.basedir import BASEDIR
 from openpilot.common.swaglog import cloudlog
 
@@ -11,8 +12,13 @@ except ImportError:
   Params = None
 
 SYSTEM_UI_DIR = os.path.join(BASEDIR, "system", "ui")
-UI_DIR = files("openpilot.selfdrive.ui")
-TRANSLATIONS_DIR = UI_DIR.joinpath("translations")
+
+try:
+  UI_DIR = files("openpilot.selfdrive.ui")
+  TRANSLATIONS_DIR = UI_DIR.joinpath("translations")
+except Exception:
+  TRANSLATIONS_DIR = Path(BASEDIR) / "selfdrive" / "ui" / "translations"
+
 LANGUAGES_FILE = TRANSLATIONS_DIR.joinpath("languages.json")
 
 UNIFONT_LANGUAGES = [

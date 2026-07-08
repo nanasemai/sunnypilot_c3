@@ -1,6 +1,25 @@
 import pyray as rl
+import re
 from openpilot.system.ui.lib.text_measure import measure_text_cached
 from openpilot.system.ui.lib.application import font_fallback
+
+def _is_cjk(char):
+  return '\u4e00' <= char <= '\u9fff'
+
+def _split_cjk(text):
+  parts = []
+  current = []
+  for char in text:
+    if _is_cjk(char):
+      if current:
+        parts.append(''.join(current))
+        current = []
+      parts.append(char)
+    else:
+      current.append(char)
+  if current:
+    parts.append(''.join(current))
+  return parts
 
 
 def _break_long_word(font: rl.Font, word: str, font_size: int, max_width: int, spacing: float = 0) -> list[str]:
@@ -50,57 +69,51 @@ def wrap_text(font: rl.Font, text: str, font_size: int, max_width: int, spacing:
   if not text or max_width <= 0:
     return []
 
-  # Split text by newlines first to preserve explicit line breaks
   paragraphs = text.split('\n')
   all_lines: list[str] = []
 
   for paragraph in paragraphs:
-    # Handle empty paragraphs (preserve empty lines)
     if not paragraph.strip():
       all_lines.append("")
       continue
 
-    # Process each paragraph separately
-    words = paragraph.split()
-    if not words:
+    has_cjk = any(_is_cjk(c) for c in paragraph)
+    if has_cjk:
+      tokens = _split_cjk(paragraph)
+    else:
+      tokens = paragraph.split()
+
+    if not tokens:
       all_lines.append("")
       continue
 
     lines: list[str] = []
     current_line: list[str] = []
 
-    for word in words:
-      word_width = measure_text_cached(font, word, font_size, spacing).x
+    for token in tokens:
+      token_width = measure_text_cached(font, token, font_size, spacing).x
 
-      # Check if word alone exceeds max width (need to break the word)
-      if word_width > max_width:
-        # Finish current line if it has content
+      if token_width > max_width:
         if current_line:
-          lines.append(" ".join(current_line))
+          lines.append("".join(current_line))
           current_line = []
-
-        # Break the long word into parts
-        lines.extend(_break_long_word(font, word, font_size, max_width, spacing))
+        lines.extend(_break_long_word(font, token, font_size, max_width, spacing))
         continue
 
-      # Measure the actual joined string to get accurate width (accounts for kerning, etc.)
-      test_line = " ".join(current_line + [word]) if current_line else word
+      join_char = "" if has_cjk else " "
+      test_line = join_char.join(current_line + [token]) if current_line else token
       test_width = measure_text_cached(font, test_line, font_size, spacing).x
 
-      # Check if word fits on current line
       if test_width <= max_width:
-        current_line.append(word)
+        current_line.append(token)
       else:
-        # Start new line with this word
         if current_line:
-          lines.append(" ".join(current_line))
-        current_line = [word]
+          lines.append(join_char.join(current_line))
+        current_line = [token]
 
-    # Add remaining words
     if current_line:
-      lines.append(" ".join(current_line))
+      lines.append(join_char.join(current_line))
 
-    # Add all lines from this paragraph
     all_lines.extend(lines)
 
   _cache[key] = all_lines
