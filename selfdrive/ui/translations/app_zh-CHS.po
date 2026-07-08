@@ -2395,7 +2395,7 @@ msgstr "赞助等级"
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 #: selfdrive/ui/sunnypilot/mici/layouts/settings.py
 msgid "sunnylink"
-msgstr "sunnylink"
+msgstr "Sunnylink"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "sunnylink Dongle ID not found. "
