@@ -2534,3 +2534,59 @@ msgstr "✓ 已订阅"
 msgid "🔥 Firehose Mode 🔥"
 msgstr "🔥 Firehose 模式 🔥"
 
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "update sunnypilot"
+msgstr "更新 sunnypilot"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "download update"
+msgstr "下载更新"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "update now"
+msgstr "立即更新"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "uninstall sunnypilot"
+msgstr "卸载 sunnypilot"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "upgrade to prime"
+msgstr "升级到 prime"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "subscribed"
+msgstr "已订阅"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "updater failed\nto respond"
+msgstr "更新器未响应"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "failed to update"
+msgstr "更新失败"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "up to date"
+msgstr "已是最新"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "regulatory info"
+msgstr "法规信息"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "driver\ncamera preview"
+msgstr "驾驶员摄像头预览"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "review\ntraining guide"
+msgstr "查看训练指南"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "terms &\nconditions"
+msgstr "条款与条件"
+
+#: selfdrive/ui/mici/layouts/settings/device.py
+msgid "serial"
+msgstr "序列号"
+
