@@ -37,6 +37,7 @@ ALERT_CLASSES = {
 
 def extract_events_strings(py_path: str) -> list[POEntry]:
   entries = []
+  seen = set()
   try:
     with open(py_path, encoding='utf-8') as f:
       content = f.read()
@@ -50,7 +51,8 @@ def extract_events_strings(py_path: str) -> list[POEntry]:
           for arg in node.args:
             if isinstance(arg, ast.Constant) and isinstance(arg.value, str):
               text = arg.value
-              if text:
+              if text and text not in seen:
+                seen.add(text)
                 entries.append(POEntry(
                   msgid=text,
                   source_refs=[rel_path],
@@ -61,7 +63,8 @@ def extract_events_strings(py_path: str) -> list[POEntry]:
           for arg in node.args:
             if isinstance(arg, ast.Constant) and isinstance(arg.value, str):
               text = arg.value
-              if text:
+              if text and text not in seen:
+                seen.add(text)
                 entries.append(POEntry(
                   msgid=text,
                   source_refs=[rel_path],

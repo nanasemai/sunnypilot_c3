@@ -271,14 +271,6 @@ msgstr ""
 msgid "BRAKE!"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "BRAKE!"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "BRAKE!"
-msgstr ""
-
 #: selfdrive/ui/layouts/onboarding.py
 #: selfdrive/ui/sunnypilot/layouts/onboarding.py
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise_sub_layouts/speed_limit_policy.py
@@ -507,16 +499,8 @@ msgstr ""
 msgid "Confirm Lane Change"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Confirm Lane Change"
-msgstr ""
-
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid "Connect to internet to check for updates. sunnypilot won't automatically start until it connects to internet to check for updates."
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Controls Mismatch"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -537,10 +521,6 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Cruise"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Cruise Fault: Restart the Car"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -603,28 +583,12 @@ msgstr ""
 msgid "DISENGAGE IMMEDIATELY"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "DISENGAGE IMMEDIATELY"
-msgstr ""
-
 #: selfdrive/ui/layouts/settings/software.py
 msgid "DOWNLOAD"
 msgstr "HERUNTERLADEN"
 
 #: selfdrive/selfdrived/events.py
 msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam mode"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -840,18 +804,6 @@ msgid "Driver Distracted"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Driver Distracted"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Driver Distracted"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Driver Unresponsive"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Driver Unresponsive"
 msgstr ""
 
@@ -861,10 +813,6 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "Driving Model"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Driving Model Lagging"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -1247,14 +1195,6 @@ msgstr "HOCH"
 msgid "Harness Relay Malfunction"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Harness Relay Malfunction"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Harness Relay Malfunction"
-msgstr ""
-
 #: system/ui/widgets/network.py
 msgid "Hidden Network"
 msgstr "Verstecktes Netzwerk"
@@ -1323,10 +1263,6 @@ msgstr ""
 msgid "Invalid LKAS setting"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Invalid LKAS setting"
-msgstr ""
-
 #: system/ui/sunnypilot/widgets/sunnylink_pairing_dialog.py
 msgid "Join our Community Forum at https://community.sunnypilot.ai and reach out to a moderator if you have issues"
 msgstr ""
@@ -1339,16 +1275,8 @@ msgstr "Joystick‑Debugmodus"
 msgid "Joystick Mode"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Joystick Mode"
-msgstr ""
-
 #: selfdrive/ui/sunnypilot/layouts/settings/trips.py
 msgid "KM"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "LKAS Fault: Restart the Car"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -1685,10 +1613,6 @@ msgstr ""
 msgid "Out of Storage"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Out of Storage"
-msgstr ""
-
 #: selfdrive/ui/layouts/settings/device.py
 msgid "PAIR"
 msgstr "KOPPELN"
@@ -2019,21 +1943,9 @@ msgid "Reverse"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Reverse"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Reverse"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid ""
 "Reverse\n"
 "Gear"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Reverse Gear"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -2163,10 +2075,6 @@ msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Selfdrive Process Lagging: Reboot Your Device"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Sensor Data Invalid"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -2352,10 +2260,6 @@ msgid "Stock AEB: Risk of Collision"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Stock AEB: Risk of Collision"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Stock LKAS: Lane Departure Detected"
 msgstr ""
 
@@ -2373,10 +2277,6 @@ msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "System Initializing"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "System Overheated"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -2571,10 +2471,6 @@ msgstr "AKTUALISIEREN"
 msgid "USB Error: Reboot Your Device"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "USB Error: Reboot Your Device"
-msgstr ""
-
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid ""
 "Unable to download updates\n"
@@ -2596,14 +2492,6 @@ msgstr "Deinstallieren"
 #: selfdrive/ui/layouts/sidebar.py
 msgid "Unknown"
 msgstr "Unbekannt"
-
-#: selfdrive/selfdrived/events.py
-msgid "Unknown Vehicle Variant"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Unknown Vehicle Variant"
-msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Unknown Vehicle Variant"
@@ -2657,10 +2545,6 @@ msgstr "ANSEHEN"
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 #: selfdrive/ui/sunnypilot/layouts/settings/vehicle/platform_selector.py
 msgid "Vehicle"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Vehicle Sensors Calibrating"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3052,14 +2936,6 @@ msgid "locationd Permanent Error"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "locationd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "locationd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "locationd Temporary Error"
 msgstr ""
 
@@ -3145,14 +3021,6 @@ msgstr ""
 #: selfdrive/ui/mici/layouts/settings/device.py
 #: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py
 msgid "paired"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "paramsd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "paramsd Permanent Error"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py

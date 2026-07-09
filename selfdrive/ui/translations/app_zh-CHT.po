@@ -271,14 +271,6 @@ msgstr "自動變換車道：盲區時延遲"
 msgid "BRAKE!"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "BRAKE!"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "BRAKE!"
-msgstr ""
-
 #: selfdrive/ui/layouts/onboarding.py
 #: selfdrive/ui/sunnypilot/layouts/onboarding.py
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise_sub_layouts/speed_limit_policy.py
@@ -507,16 +499,8 @@ msgstr "確認"
 msgid "Confirm Lane Change"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Confirm Lane Change"
-msgstr ""
-
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid "Connect to internet to check for updates. sunnypilot won't automatically start until it connects to internet to check for updates."
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Controls Mismatch"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -538,10 +522,6 @@ msgstr "國家/地區"
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Cruise"
 msgstr "巡航"
-
-#: selfdrive/selfdrived/events.py
-msgid "Cruise Fault: Restart the Car"
-msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Cruise Fault: Restart the Car"
@@ -603,28 +583,12 @@ msgstr "已停用"
 msgid "DISENGAGE IMMEDIATELY"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "DISENGAGE IMMEDIATELY"
-msgstr ""
-
 #: selfdrive/ui/layouts/settings/software.py
 msgid "DOWNLOAD"
 msgstr "下載"
 
 #: selfdrive/selfdrived/events.py
 msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam mode"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -842,18 +806,6 @@ msgid "Driver Distracted"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Driver Distracted"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Driver Distracted"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Driver Unresponsive"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Driver Unresponsive"
 msgstr ""
 
@@ -864,10 +816,6 @@ msgstr "行程"
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "Driving Model"
 msgstr "駕駛模型"
-
-#: selfdrive/selfdrived/events.py
-msgid "Driving Model Lagging"
-msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Driving Model Lagging"
@@ -1266,14 +1214,6 @@ msgstr "高"
 msgid "Harness Relay Malfunction"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Harness Relay Malfunction"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Harness Relay Malfunction"
-msgstr ""
-
 #: system/ui/widgets/network.py
 msgid "Hidden Network"
 msgstr "隱藏網路"
@@ -1342,10 +1282,6 @@ msgstr "互動逾時"
 msgid "Invalid LKAS setting"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Invalid LKAS setting"
-msgstr ""
-
 #: system/ui/sunnypilot/widgets/sunnylink_pairing_dialog.py
 msgid "Join our Community Forum at https://community.sunnypilot.ai and reach out to a moderator if you have issues"
 msgstr "加入我們的社群論壇 https://community.sunnypilot.ai，如有問題請聯絡管理員。"
@@ -1358,17 +1294,9 @@ msgstr "搖桿除錯模式"
 msgid "Joystick Mode"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "Joystick Mode"
-msgstr ""
-
 #: selfdrive/ui/sunnypilot/layouts/settings/trips.py
 msgid "KM"
 msgstr "公里"
-
-#: selfdrive/selfdrived/events.py
-msgid "LKAS Fault: Restart the Car"
-msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "LKAS Fault: Restart the Car"
@@ -1698,10 +1626,6 @@ msgid ""
 "OpenStreetMap database is out of date. New maps must be downloaded if you wish to continue using OpenStreetMap data for Enhanced Speed Control and road name display.\n"
 "\n"
 "%1"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Out of Storage"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -2038,21 +1962,9 @@ msgid "Reverse"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Reverse"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Reverse"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid ""
 "Reverse\n"
 "Gear"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Reverse Gear"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -2182,10 +2094,6 @@ msgstr "自調校"
 
 #: selfdrive/selfdrived/events.py
 msgid "Selfdrive Process Lagging: Reboot Your Device"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Sensor Data Invalid"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -2371,10 +2279,6 @@ msgid "Stock AEB: Risk of Collision"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Stock AEB: Risk of Collision"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Stock LKAS: Lane Departure Detected"
 msgstr ""
 
@@ -2392,10 +2296,6 @@ msgstr "手動駐車制動的走走停停（測試版）"
 
 #: selfdrive/selfdrived/events.py
 msgid "System Initializing"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "System Overheated"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -2593,10 +2493,6 @@ msgstr "更新"
 msgid "USB Error: Reboot Your Device"
 msgstr ""
 
-#: selfdrive/selfdrived/events.py
-msgid "USB Error: Reboot Your Device"
-msgstr ""
-
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid ""
 "Unable to download updates\n"
@@ -2618,14 +2514,6 @@ msgstr "解除安裝"
 #: selfdrive/ui/layouts/sidebar.py
 msgid "Unknown"
 msgstr "未知"
-
-#: selfdrive/selfdrived/events.py
-msgid "Unknown Vehicle Variant"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Unknown Vehicle Variant"
-msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Unknown Vehicle Variant"
@@ -2680,10 +2568,6 @@ msgstr "檢視"
 #: selfdrive/ui/sunnypilot/layouts/settings/vehicle/platform_selector.py
 msgid "Vehicle"
 msgstr "車輛"
-
-#: selfdrive/selfdrived/events.py
-msgid "Vehicle Sensors Calibrating"
-msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Vehicle Sensors Calibrating"
@@ -3074,14 +2958,6 @@ msgid "locationd Permanent Error"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "locationd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "locationd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "locationd Temporary Error"
 msgstr ""
 
@@ -3168,14 +3044,6 @@ msgstr "與 sunnylink 配對"
 #: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py
 msgid "paired"
 msgstr "已配對"
-
-#: selfdrive/selfdrived/events.py
-msgid "paramsd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "paramsd Permanent Error"
-msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "paramsd Permanent Error"

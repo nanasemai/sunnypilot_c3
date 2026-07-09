@@ -2975,10 +2975,6 @@ msgid "Invalid LKAS setting"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Joystick Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Ensure road ahead is clear"
 msgstr ""
 
@@ -2988,10 +2984,6 @@ msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Be ready to take over at any time"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam mode"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3011,18 +3003,6 @@ msgid "Security Key Not Available"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Invalid LKAS setting"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Dashcam Mode"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Car Unrecognized"
 msgstr ""
 
@@ -3039,23 +3019,11 @@ msgid "AEB: Risk of Collision"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "BRAKE!"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Stock AEB: Risk of Collision"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Stock AEB: Risk of Collision"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Stock LKAS: Lane Departure Detected"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "BRAKE!"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3079,23 +3047,11 @@ msgid "DISENGAGE IMMEDIATELY"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Driver Distracted"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Touch Steering Wheel: No Face Detected"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Touch Steering Wheel"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Driver Unresponsive"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "DISENGAGE IMMEDIATELY"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3171,22 +3127,6 @@ msgid "locationd Permanent Error"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "locationd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "locationd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "paramsd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "paramsd Permanent Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "paramsd Permanent Error"
 msgstr ""
 
@@ -3231,10 +3171,6 @@ msgid "Vehicle Steering Time Limit"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Out of Storage"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Sensor Data Invalid"
 msgstr ""
 
@@ -3243,19 +3179,11 @@ msgid "Possible Hardware Issue"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Sensor Data Invalid"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Distraction Level Too High"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Excessive Actuation"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "System Overheated"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3307,10 +3235,6 @@ msgid "Radar Temporarily Unavailable"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Driving Model Lagging"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Device Fell Off Mount"
 msgstr ""
 
@@ -3327,10 +3251,6 @@ msgid "Cruise Fault: Restart the car to engage"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Cruise Fault: Restart the Car"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Electronic Stability Control Active"
 msgstr ""
 
@@ -3339,23 +3259,7 @@ msgid "Controls Mismatch"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Controls Mismatch"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "USB Error: Reboot Your Device"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "USB Error: Reboot Your Device"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Unknown Vehicle Variant"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Unknown Vehicle Variant"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3383,17 +3287,9 @@ msgid "LKAS Fault: Restart the car to engage"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "LKAS Fault: Restart the Car"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid ""
 "Reverse\n"
 "Gear"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Reverse Gear"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3409,15 +3305,7 @@ msgid "Harness Relay Malfunction"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Harness Relay Malfunction"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Check Hardware"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Harness Relay Malfunction"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3453,19 +3341,11 @@ msgid "Drive to Calibrate"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Vehicle Sensors Calibrating"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Bookmark Saved"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "paramsd Temporary Error"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Driver Distracted"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
@@ -3485,10 +3365,6 @@ msgid "Steer Right"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
-msgid "Confirm Lane Change"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
 msgid "Car in Blindspot"
 msgstr ""
 
@@ -3502,14 +3378,6 @@ msgstr ""
 
 #: selfdrive/selfdrived/events.py
 msgid "Calibrating"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Reverse"
-msgstr ""
-
-#: selfdrive/selfdrived/events.py
-msgid "Reverse"
 msgstr ""
 
 #: selfdrive/selfdrived/events.py
