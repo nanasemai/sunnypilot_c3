@@ -9,7 +9,7 @@ UNIFONT_LANGUAGES = {"th", "zh-CHT", "zh-CHS", "ko", "ja"}
 def _get_language_codes():
   translations_dir = Path("#selfdrive/ui/translations")
   languages_file = translations_dir / "languages.json"
-  with open(languages_file.get_path(), encoding="utf-8") as f:
+  with open(languages_file, encoding="utf-8") as f:
     languages = json.load(f)
   return [code for code in languages.values() if code in UNIFONT_LANGUAGES]
 
