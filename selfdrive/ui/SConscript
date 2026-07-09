@@ -7,7 +7,7 @@ Import('env', 'arch', 'common')
 UNIFONT_LANGUAGES = {"th", "zh-CHT", "zh-CHS", "ko", "ja"}
 
 def _get_language_codes():
-  translations_dir = Path("#selfdrive/ui/translations")
+  translations_dir = Path(Dir("#selfdrive/ui/translations").abspath)
   languages_file = translations_dir / "languages.json"
   with open(languages_file, encoding="utf-8") as f:
     languages = json.load(f)
