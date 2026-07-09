@@ -8,7 +8,7 @@ from collections.abc import Callable
 import pyray as rl
 
 from openpilot.selfdrive.ui.ui_state import ui_state
-from openpilot.system.ui.lib.multilang import tr
+from openpilot.system.ui.lib.multilang import tr, tr_noop
 from openpilot.system.ui.sunnypilot.widgets.list_view import toggle_item_sp, option_item_sp, LineSeparatorSP
 from openpilot.system.ui.widgets.network import NavButton
 from openpilot.system.ui.widgets.scroller_tici import Scroller
@@ -20,7 +20,7 @@ from openpilot.sunnypilot.selfdrive.controls.lib.auto_lane_change import AutoLan
 class LaneChangeSettingsLayout(Widget):
   def __init__(self, back_btn_callback: Callable):
     super().__init__()
-    self._back_button = NavButton(tr("Back"))
+    self._back_button = NavButton(tr_noop("Back"))
     self._back_button.set_click_callback(back_btn_callback)
 
     items = self._initialize_items()

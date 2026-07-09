@@ -31,8 +31,8 @@ class CurrentModelInfo(Widget):
     default_text = f"{DEFAULT_MODEL} (Default)".lower()
     self.current_model_text = UnifiedLabel(default_text, 32, max_width=max_width, text_color=subheader_color, font_weight=FontWeight.ROMAN, scroll=True)
 
-    self.info_header = UnifiedLabel("cache size", 48, max_width=max_width, text_color=header_color, font_weight=FontWeight.DISPLAY)
-    self.info_text = UnifiedLabel("0 mb", 32, max_width=max_width, text_color=subheader_color, font_weight=FontWeight.ROMAN)
+    self.info_header = UnifiedLabel(tr("cache size"), 48, max_width=max_width, text_color=header_color, font_weight=FontWeight.DISPLAY)
+    self.info_text = UnifiedLabel(tr("0 MB"), 32, max_width=max_width, text_color=subheader_color, font_weight=FontWeight.ROMAN)
 
   def _render(self, _):
     self.current_model_header.set_position(self._rect.x + 20, self._rect.y - 10)

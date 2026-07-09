@@ -30,67 +30,67 @@ class VisualsLayout(Widget):
     self._toggle_defs = {
       "BlindSpot": (
         lambda: tr("Show Blind Spot Warnings"),
-        tr("Enabling this will display warnings when a vehicle is detected in your " +
-           "blind spot as long as your car has BSM supported."),
+        lambda: tr("Enabling this will display warnings when a vehicle is detected in your " +
+                   "blind spot as long as your car has BSM supported."),
         None,
       ),
       "TorqueBar": (
         lambda: tr("Steering Arc"),
-        tr("Display steering arc on the driving screen when lateral control is enabled."),
+        lambda: tr("Display steering arc on the driving screen when lateral control is enabled."),
         None,
       ),
       "RainbowMode": (
         lambda: tr("Enable Tesla Rainbow Mode"),
-        tr("A beautiful rainbow effect on the path the model wants to take. " +
-           "It does not affect driving in any way."),
+        lambda: tr("A beautiful rainbow effect on the path the model wants to take. " +
+                   "It does not affect driving in any way."),
         None,
       ),
       "StandstillTimer": (
         lambda: tr("Enable Standstill Timer"),
-        tr("Show a timer on the HUD when the car is at a standstill."),
+        lambda: tr("Show a timer on the HUD when the car is at a standstill."),
         None,
       ),
       "RoadNameToggle": (
         lambda: tr("Display Road Name"),
-        tr("Displays the name of the road the car is traveling on." +
-           "<br>The OpenStreetMap database of the location must be downloaded from " +
-           "the OSM panel to fetch the road name."),
+        lambda: tr("Displays the name of the road the car is traveling on." +
+                   "<br>The OpenStreetMap database of the location must be downloaded from " +
+                   "the OSM panel to fetch the road name."),
         None,
       ),
       "GreenLightAlert": (
         lambda: tr("Green Traffic Light Alert (Beta)"),
-        tr("A chime and on-screen alert will play when the traffic light you are waiting for " +
-           "turns green and you have no vehicle in front of you." +
-           "<br>Note: This chime is only designed as a notification. " +
-           "It is the driver's responsibility to observe their environment and make decisions accordingly."),
+        lambda: tr("A chime and on-screen alert will play when the traffic light you are waiting for " +
+                   "turns green and you have no vehicle in front of you." +
+                   "<br>Note: This chime is only designed as a notification. " +
+                   "It is the driver's responsibility to observe their environment and make decisions accordingly."),
         None,
       ),
       "LeadDepartAlert": (
         lambda: tr("Lead Departure Alert (Beta)"),
-        tr("A chime and on-screen alert will play when you are stopped, and the vehicle in front of you start moving." +
-           "<br>Note: This chime is only designed as a notification. " +
-           "It is the driver's responsibility to observe their environment and make decisions accordingly."),
+        lambda: tr("A chime and on-screen alert will play when you are stopped, and the vehicle in front of you start moving." +
+                   "<br>Note: This chime is only designed as a notification. " +
+                   "It is the driver's responsibility to observe their environment and make decisions accordingly."),
         None,
       ),
       "TrueVEgoUI": (
         lambda: tr("Speedometer: Always Display True Speed"),
-        tr("For applicable vehicles, always display the true vehicle current speed from wheel speed sensors."),
+        lambda: tr("For applicable vehicles, always display the true vehicle current speed from wheel speed sensors."),
         None,
       ),
       "HideVEgoUI": (
         lambda: tr("Speedometer: Hide from Onroad Screen"),
-        tr("When enabled, the speedometer on the onroad screen is not displayed."),
+        lambda: tr("When enabled, the speedometer on the onroad screen is not displayed."),
         None,
       ),
       "ShowTurnSignals": (
         lambda: tr("Display Turn Signals"),
-        tr("When enabled, visual turn indicators are drawn on the HUD."),
+        lambda: tr("When enabled, visual turn indicators are drawn on the HUD."),
         None,
       ),
       "RocketFuel": (
         lambda: tr("Real-time Acceleration Bar"),
-        tr("Show an indicator on the left side of the screen to display real-time vehicle acceleration and deceleration. " +
-           "This displays what the car is currently doing, not what the planner is requesting."),
+        lambda: tr("Show an indicator on the left side of the screen to display real-time vehicle acceleration and deceleration. " +
+                   "This displays what the car is currently doing, not what the planner is requesting."),
         None,
       ),
     }

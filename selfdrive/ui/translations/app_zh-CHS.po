@@ -866,7 +866,7 @@ msgstr "完成设置"
 #: selfdrive/ui/layouts/settings/settings.py
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Firehose"
-msgstr "数据洪流"
+msgstr "Firehose"
 
 #: selfdrive/ui/layouts/settings/firehose.py
 #: selfdrive/ui/mici/layouts/settings/firehose.py
@@ -965,7 +965,7 @@ msgstr "在手机上前往 https://connect.comma.ai"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/visuals.py
 msgid "Green Traffic Light Alert (Beta)"
-msgstr "绿灯提醒（测试版）"
+msgstr "红绿灯提醒（测试版）"
 
 #: selfdrive/ui/layouts/sidebar.py
 msgid "HIGH"
@@ -1153,7 +1153,7 @@ msgstr "无"
 
 #: selfdrive/ui/layouts/sidebar.py
 msgid "NO"
-msgstr "否"
+msgstr "未连接"
 
 #: selfdrive/ui/sunnypilot/onroad/speed_limit.py
 msgid "Near"

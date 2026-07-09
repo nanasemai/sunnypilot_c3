@@ -17,27 +17,27 @@ from openpilot.system.ui.widgets.scroller_tici import Scroller
 from openpilot.system.ui.sunnypilot.widgets.list_view import multiple_button_item_sp, toggle_item_sp
 
 MADS_STEERING_MODE_OPTIONS = [
-  (tr("Remain Active"), tr_noop("Remain Active: ALC will remain active when the brake pedal is pressed.")),
-  (tr("Pause"), tr_noop("Pause: ALC will pause when the brake pedal is pressed.")),
-  (tr("Disengage"), tr_noop("Disengage: ALC will disengage when the brake pedal is pressed.")),
+  (lambda: tr("Remain Active"), tr_noop("Remain Active: ALC will remain active when the brake pedal is pressed.")),
+  (lambda: tr("Pause"), tr_noop("Pause: ALC will pause when the brake pedal is pressed.")),
+  (lambda: tr("Disengage"), tr_noop("Disengage: ALC will disengage when the brake pedal is pressed.")),
 ]
 
-MADS_MAIN_CRUISE_BASE_DESC = tr("Note: For vehicles without LFA/LKAS button, disabling this will prevent lateral control engagement.")
-MADS_UNIFIED_ENGAGEMENT_MODE_BASE_DESC = "{engage}<br><h4>{note}</h4>".format(
+MADS_MAIN_CRUISE_BASE_DESC = tr_noop("Note: For vehicles without LFA/LKAS button, disabling this will prevent lateral control engagement.")
+MADS_UNIFIED_ENGAGEMENT_MODE_BASE_DESC = lambda: "{engage}<br><h4>{note}</h4>".format(
   engage=tr("Engage lateral and longitudinal control with cruise control engagement."),
   note=tr("Note: Once lateral control is engaged via UEM, it will remain engaged until it is manually disabled via the MADS button or car shut off."),
 )
 
-STATUS_CHECK_COMPATIBILITY = tr("Start the vehicle to check vehicle compatibility.")
-DEFAULT_TO_OFF = tr("This feature defaults to OFF, and does not allow selection due to vehicle limitations.")
-DEFAULT_TO_ON = tr("This feature defaults to ON, and does not allow selection due to vehicle limitations.")
-STATUS_DISENGAGE_ONLY = tr("This platform only supports Disengage mode due to vehicle limitations.")
+STATUS_CHECK_COMPATIBILITY = tr_noop("Start the vehicle to check vehicle compatibility.")
+DEFAULT_TO_OFF = tr_noop("This feature defaults to OFF, and does not allow selection due to vehicle limitations.")
+DEFAULT_TO_ON = tr_noop("This feature defaults to ON, and does not allow selection due to vehicle limitations.")
+STATUS_DISENGAGE_ONLY = tr_noop("This platform only supports Disengage mode due to vehicle limitations.")
 
 
 class MadsSettingsLayout(Widget):
   def __init__(self, back_btn_callback: Callable):
     super().__init__()
-    self._back_button = NavButton(tr("Back"))
+    self._back_button = NavButton(tr_noop("Back"))
     self._back_button.set_click_callback(back_btn_callback)
     self._initialize_items()
     self._scroller = Scroller(self.items, line_separator=True, spacing=0)
@@ -45,7 +45,7 @@ class MadsSettingsLayout(Widget):
   def _initialize_items(self):
     self._main_cruise_toggle = toggle_item_sp(
       title=lambda: tr("Toggle with Main Cruise"),
-      description=MADS_MAIN_CRUISE_BASE_DESC,
+      description=lambda: tr(MADS_MAIN_CRUISE_BASE_DESC),
       param="MadsMainCruiseAllowed",
     )
     self._unified_engagement_toggle = toggle_item_sp(
@@ -103,7 +103,7 @@ class MadsSettingsLayout(Widget):
     base_desc = tr("Choose how Automatic Lane Centering (ALC) behaves after the brake pedal is manually pressed in sunnypilot.")
     result = base_desc + "<br><br>"
     for opt in MADS_STEERING_MODE_OPTIONS:
-      desc = "<b>" + opt[1] + "</b>" if button_index == MADS_STEERING_MODE_OPTIONS.index(opt) else opt[1]
+      desc = "<b>" + tr(opt[1]) + "</b>" if button_index == MADS_STEERING_MODE_OPTIONS.index(opt) else tr(opt[1])
       result += desc + "<br>"
     self._steering_mode.set_description(result)
     self._steering_mode.show_description(True)
@@ -117,21 +117,21 @@ class MadsSettingsLayout(Widget):
 
       self._main_cruise_toggle.action_item.set_enabled(False)
       self._main_cruise_toggle.action_item.set_state(False)
-      self._main_cruise_toggle.set_description("<b>" + DEFAULT_TO_OFF + "</b><br>" + MADS_MAIN_CRUISE_BASE_DESC)
+      self._main_cruise_toggle.set_description("<b>" + tr(DEFAULT_TO_OFF) + "</b><br>" + tr(MADS_MAIN_CRUISE_BASE_DESC))
 
       self._unified_engagement_toggle.action_item.set_enabled(False)
       self._unified_engagement_toggle.action_item.set_state(True)
-      self._unified_engagement_toggle.set_description("<b>" + DEFAULT_TO_ON + "</b><br>" + MADS_UNIFIED_ENGAGEMENT_MODE_BASE_DESC)
+      self._unified_engagement_toggle.set_description("<b>" + tr(DEFAULT_TO_ON) + "</b><br>" + MADS_UNIFIED_ENGAGEMENT_MODE_BASE_DESC())
 
-      self._steering_mode.set_description(STATUS_DISENGAGE_ONLY)
+      self._steering_mode.set_description(tr(STATUS_DISENGAGE_ONLY))
       self._steering_mode.action_item.set_selected_button(MadsSteeringModeOnBrake.DISENGAGE)
       self._steering_mode.action_item.set_enabled_buttons({MadsSteeringModeOnBrake.DISENGAGE})
     else:
       self._main_cruise_toggle.action_item.set_enabled(True)
-      self._main_cruise_toggle.set_description(MADS_MAIN_CRUISE_BASE_DESC)
+      self._main_cruise_toggle.set_description(tr(MADS_MAIN_CRUISE_BASE_DESC))
 
       self._unified_engagement_toggle.action_item.set_enabled(True)
-      self._unified_engagement_toggle.set_description(MADS_UNIFIED_ENGAGEMENT_MODE_BASE_DESC)
+      self._unified_engagement_toggle.set_description(MADS_UNIFIED_ENGAGEMENT_MODE_BASE_DESC())
 
       self._steering_mode.action_item.set_enabled(True)
       self._steering_mode.action_item.set_enabled_buttons(None)

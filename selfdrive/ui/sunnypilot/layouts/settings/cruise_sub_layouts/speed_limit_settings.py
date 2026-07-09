@@ -12,27 +12,27 @@ from openpilot.selfdrive.ui.sunnypilot.layouts.settings.cruise_sub_layouts.speed
 from openpilot.selfdrive.ui.ui_state import ui_state
 from openpilot.sunnypilot.selfdrive.controls.lib.speed_limit.common import Mode as SpeedLimitMode
 from openpilot.sunnypilot.selfdrive.controls.lib.speed_limit.common import OffsetType as SpeedLimitOffsetType
-from openpilot.system.ui.lib.multilang import tr
+from openpilot.system.ui.lib.multilang import tr, tr_noop
 from openpilot.system.ui.sunnypilot.widgets import get_highlighted_description
 from openpilot.system.ui.sunnypilot.widgets.list_view import multiple_button_item_sp, option_item_sp, simple_button_item_sp, LineSeparatorSP
 from openpilot.system.ui.widgets import Widget
 from openpilot.system.ui.widgets.network import NavButton
 from openpilot.system.ui.widgets.scroller_tici import Scroller
 
-SPEED_LIMIT_MODE_BUTTONS = [tr("Off"), tr("Info"), tr("Warning"), tr("Assist")]
-SPEED_LIMIT_OFFSET_TYPE_BUTTONS = [tr("None"), tr("Fixed"), tr("%")]
+SPEED_LIMIT_MODE_BUTTONS = [lambda: tr("Off"), lambda: tr("Info"), lambda: tr("Warning"), lambda: tr("Assist")]
+SPEED_LIMIT_OFFSET_TYPE_BUTTONS = [lambda: tr("None"), lambda: tr("Fixed"), lambda: tr("%")]
 
 SPEED_LIMIT_MODE_DESCRIPTIONS = [
-  tr("Off: Disables the Speed Limit functions."),
-  tr("Information: Displays the current road's speed limit."),
-  tr("Warning: Provides a warning when exceeding the current road's speed limit."),
-  tr("Assist: Adjusts the vehicle's cruise speed based on the current road's speed limit when operating the +/- buttons."),
+  tr_noop("Off: Disables the Speed Limit functions."),
+  tr_noop("Information: Displays the current road's speed limit."),
+  tr_noop("Warning: Provides a warning when exceeding the current road's speed limit."),
+  tr_noop("Assist: Adjusts the vehicle's cruise speed based on the current road's speed limit when operating the +/- buttons."),
 ]
 
 SPEED_LIMIT_OFFSET_DESCRIPTIONS = [
-  tr("None: No Offset"),
-  tr("Fixed: Adds a fixed offset [Speed Limit + Offset]"),
-  tr("Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]"),
+  tr_noop("None: No Offset"),
+  tr_noop("Fixed: Adds a fixed offset [Speed Limit + Offset]"),
+  tr_noop("Percent: Adds a percent offset [Speed Limit + (Offset % Speed Limit)]"),
 ]
 
 
@@ -46,7 +46,7 @@ class SpeedLimitSettingsLayout(Widget):
     super().__init__()
     self._current_panel = PanelType.SETTINGS
 
-    self._back_button = NavButton(tr("Back"))
+    self._back_button = NavButton(tr_noop("Back"))
     self._back_button.set_click_callback(back_btn_callback)
 
     self._policy_layout = SpeedLimitPolicyLayout(lambda: self._set_current_panel(PanelType.SETTINGS))

@@ -12,7 +12,7 @@ from functools import partial
 
 from openpilot.common.basedir import BASEDIR
 from openpilot.system.ui.lib.application import gui_app, FontWeight
-from openpilot.system.ui.lib.multilang import tr
+from openpilot.system.ui.lib.multilang import tr, tr_noop
 from openpilot.system.ui.widgets import DialogResult, Widget
 from openpilot.system.ui.widgets.button import Button, ButtonStyle
 from openpilot.system.ui.widgets.confirm_dialog import ConfirmDialog
@@ -113,8 +113,8 @@ class PlatformSelector(Button):
     dialog = TreeOptionDialog(
       tr("Select a vehicle"),
       folders,
-      search_title=tr("Search your vehicle"),
-      search_subtitle=tr("Enter model year (e.g., 2021) and model (Toyota Corolla):"),
+      search_title=tr_noop("Search your vehicle"),
+      search_subtitle=tr_noop("Enter model year (e.g., 2021) and model (Toyota Corolla):"),
       search_funcs=[lambda node: node.data.get('display_name', ''), lambda node: node.data.get('search_tags', '')]
     )
     callback = partial(self._on_platform_selected, dialog)

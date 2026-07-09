@@ -135,7 +135,7 @@ class BaseDriverCameraDialog(Widget):
       return
 
     # Show alert level
-    alert_level_str = f"{'Pay Attention' if is_vision else 'Touch Wheel'} - level {dm_state.alertLevel}"
+    alert_level_str = f"{tr('Pay Attention') if is_vision else tr('Touch Wheel')} - level {dm_state.alertLevel}"
     alignment = rl.GuiTextAlignment.TEXT_ALIGN_RIGHT if self.driver_state_renderer.is_rhd else rl.GuiTextAlignment.TEXT_ALIGN_LEFT
 
     shadow_rect = rl.Rectangle(rect.x + 2, rect.y + 2, rect.width, rect.height)

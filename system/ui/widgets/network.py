@@ -67,7 +67,7 @@ class NavButton(Widget):
   def _render(self, _):
     color = rl.Color(74, 74, 74, 255) if self.is_pressed else rl.Color(57, 57, 57, 255)
     rl.draw_rectangle_rounded(self._rect, 0.6, 10, color)
-    gui_label(self.rect, self.text, font_size=60, alignment=rl.GuiTextAlignment.TEXT_ALIGN_CENTER)
+    gui_label(self.rect, tr(self.text), font_size=60, alignment=rl.GuiTextAlignment.TEXT_ALIGN_CENTER)
 
 
 class NetworkUI(Widget):
@@ -77,7 +77,7 @@ class NetworkUI(Widget):
     self._current_panel: PanelType = PanelType.WIFI
     self._wifi_panel = self._child(WifiManagerUI(wifi_manager))
     self._advanced_panel = self._child(AdvancedNetworkSettings(wifi_manager))
-    self._nav_button = self._child(NavButton(tr("Advanced")))
+    self._nav_button = self._child(NavButton(tr_noop("Advanced")))
     self._nav_button.set_click_callback(self._cycle_panel)
 
   def show_event(self):
