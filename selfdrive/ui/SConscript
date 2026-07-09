@@ -1,16 +1,35 @@
 from pathlib import Path
 import importlib.util
+import json
 
 Import('env', 'arch', 'common')
+
+UNIFONT_LANGUAGES = {"th", "zh-CHT", "zh-CHS", "ko", "ja"}
+
+def _get_language_codes():
+  translations_dir = Path("#selfdrive/ui/translations")
+  languages_file = translations_dir / "languages.json"
+  with open(languages_file.get_path(), encoding="utf-8") as f:
+    languages = json.load(f)
+  return [code for code in languages.values() if code in UNIFONT_LANGUAGES]
 
 # build the fonts
 generator = File("#selfdrive/assets/fonts/process.py")
 source_files = Glob("#selfdrive/assets/fonts/*.ttf") + Glob("#selfdrive/assets/fonts/*.otf")
-output_files = [
-  (f"#{Path(f.path).with_suffix('.fnt')}", f"#{Path(f.path).with_suffix('.png')}")
-  for f in source_files
-  if "NotoColor" not in f.name
-]
+
+output_files = []
+for f in source_files:
+  if "NotoColor" in f.name or f.name == "unifont.otf":
+    continue
+  stem = Path(f.path).stem
+  if stem.lower().startswith("opfont"):
+      labels_outputs = [(f"#{Path(f.path).parent / f'{stem}-Labels.fnt'}", f"#{Path(f.path).parent / f'{stem}-Labels.png'}")]
+      lang_codes = _get_language_codes()
+      lang_outputs = [(f"#{Path(f.path).parent / f'{stem}-{code}.fnt'}", f"#{Path(f.path).parent / f'{stem}-{code}.png'}") for code in lang_codes]
+      output_files.extend(labels_outputs + lang_outputs)
+  else:
+    output_files.append((f"#{Path(f.path).with_suffix('.fnt')}", f"#{Path(f.path).with_suffix('.png')}"))
+
 env.Command(
   target=output_files,
   source=[generator, source_files],
