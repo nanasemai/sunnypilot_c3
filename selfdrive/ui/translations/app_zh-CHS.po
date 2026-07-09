@@ -1,10 +1,10 @@
-#: selfdrive/ui/sunnypilot/layouts/settings/device.py
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\\n"
-"Language: zh-CHS\\n"
-"Plural-Forms: nplurals=1; plural=0;\\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh-CHS\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
+#: selfdrive/ui/sunnypilot/layouts/settings/device.py
 msgid " (Default)"
 msgstr "（默认）"
 
@@ -653,11 +653,9 @@ msgstr "设备温度过高。系统正在降温后启动。当前内部组件温
 
 #: selfdrive/ui/sunnypilot/layouts/settings/device.py
 msgid ""
-"Device will automatically shutdown after set time once the engine is turned off.\\n"
+"Device will automatically shutdown after set time once the engine is turned off.\n"
 "(30h is the default)"
 msgstr ""
-"发动机熄火后，设备将在设定时间后自动关机。\\n"
-"（默认 30 小时）"
 
 #: selfdrive/ui/sunnypilot/layouts/onboarding.py
 msgid "Disable"
@@ -1126,45 +1124,28 @@ msgstr "对于适用的车辆，始终显示来自轮速传感器的真实车速
 
 #: selfdrive/ui/mici/layouts/settings/firehose.py
 msgid ""
-"For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\\n"
-"\\n"
+"For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\n"
+"\n"
 "Firehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card."
 msgstr ""
-"为获得最佳效果，请每周将设备拿到室内，连接到优质的 USB-C 适配器和 Wi-Fi。\\n"
-"\\n"
-"如果连接到热点或不限流量的 SIM 卡，Firehose 模式在您驾驶时也能工作。"
 
 #: selfdrive/ui/layouts/settings/firehose.py
 msgid ""
-"For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\\n"
-"\\n"
-"Firehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card.\\n"
-"\\n"
-"\\n"
-"Frequently Asked Questions\\n"
-"\\n"
-"Does it matter how or where I drive? Nope, just drive as you normally would.\\n"
-"\\n"
-"Do all of my segments get pulled in Firehose Mode? No, we selectively pull a subset of your segments.\\n"
-"\\n"
-"What's a good USB-C adapter? Any fast phone or laptop charger should be fine.\\n"
-"\\n"
+"For maximum effectiveness, bring your device inside and connect to a good USB-C adapter and Wi-Fi weekly.\n"
+"\n"
+"Firehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card.\n"
+"\n"
+"\n"
+"Frequently Asked Questions\n"
+"\n"
+"Does it matter how or where I drive? Nope, just drive as you normally would.\n"
+"\n"
+"Do all of my segments get pulled in Firehose Mode? No, we selectively pull a subset of your segments.\n"
+"\n"
+"What's a good USB-C adapter? Any fast phone or laptop charger should be fine.\n"
+"\n"
 "Does it matter which software I run? Yes, only upstream openpilot (and particular forks) are able to be used for training."
 msgstr ""
-"为获得最佳效果，请每周将设备拿到室内，连接到优质的 USB-C 适配器和 Wi-Fi。\\n"
-"\\n"
-"如果连接到热点或不限流量的 SIM 卡，Firehose 模式在您驾驶时也能工作。\\n"
-"\\n"
-"\\n"
-"常见问题\\n"
-"\\n"
-"我如何驾驶或在何处驾驶有影响吗？没有，像平常一样驾驶即可。\\n"
-"\\n"
-"在 Firehose 模式下我的所有行驶片段都会被上传吗？不会，我们只会有选择地上传一部分片段。\\n"
-"\\n"
-"什么样的 USB-C 适配器比较好？任何快速的手机或笔记本充电器都可以。\\n"
-"\\n"
-"我运行哪种软件有影响吗？有影响，只有上游 openpilot（以及特定分支）可用于训练。"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "For secure backup, restore, and remote configuration"
@@ -1623,11 +1604,10 @@ msgstr "打开"
 
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid ""
-"OpenStreetMap database is out of date. New maps must be downloaded if you wish to continue using OpenStreetMap data for Enhanced Speed Control and road name display.\\n"
-"\\n"
+"OpenStreetMap database is out of date. New maps must be downloaded if you wish to continue using OpenStreetMap data for Enhanced Speed Control and road name display.\n"
+"\n"
 "%1"
 msgstr ""
-"%1"
 
 #: selfdrive/selfdrived/events.py
 msgid "Out of Storage"
@@ -1964,11 +1944,9 @@ msgstr "倒车"
 
 #: selfdrive/selfdrived/events.py
 msgid ""
-"Reverse\\n"
+"Reverse\n"
 "Gear"
 msgstr ""
-"倒车\n"
-"档位"
 
 #: selfdrive/selfdrived/events.py
 msgid "Reverse Gear"
@@ -2411,13 +2389,10 @@ msgstr "此设置将在设备进入离车状态后生效。"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/osm.py
 msgid ""
-"This will delete ALL downloaded maps\\n"
-"\\n"
+"This will delete ALL downloaded maps\n"
+"\n"
 "Are you sure you want to delete all maps?"
 msgstr ""
-"这将删除所有已下载的地图\\n"
-"\\n"
-"确定要删除所有地图吗？"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "This will delete ALL downloaded models from the cache except the currently active model. Are you sure?"
@@ -2498,10 +2473,9 @@ msgstr "USB错误：重启设备"
 
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid ""
-"Unable to download updates\\n"
+"Unable to download updates\n"
 "%1"
 msgstr ""
-"%1"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "Unable to restore the settings, try again later."
@@ -2719,11 +2693,9 @@ msgstr "您的车辆将使用预测纵向调校。"
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid ""
-"accept\\n"
+"accept\n"
 "terms"
 msgstr ""
-"接受\n"
-"条款"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/models.py
 msgid "active model"
@@ -2806,11 +2778,9 @@ msgstr "copyparty 是一个功能强大的文件服务器，您可以用它来�
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid ""
-"decline &\\n"
+"decline &\n"
 "uninstall"
 msgstr ""
-"拒绝 &\n"
-"卸载"
 
 #: selfdrive/ui/mici/layouts/settings/network/network_layout.py
 #: system/ui/widgets/network.py
@@ -2832,11 +2802,9 @@ msgstr "设备 ID"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/onboarding.py
 msgid ""
-"disable\\n"
+"disable\n"
 "sunnylink"
 msgstr ""
-"禁用\n"
-"sunnylink"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/settings.py
 msgid "disengage to enable always offroad"
@@ -2868,9 +2836,9 @@ msgstr "下载中..."
 
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid ""
-"driver\\n"
+"driver\n"
 "camera preview"
-msgstr "驾驶员摄像头预览"
+msgstr ""
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid "driver camera data"
@@ -2878,11 +2846,9 @@ msgstr "驾驶员摄像头数据"
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid ""
-"driver monitoring\\n"
+"driver monitoring\n"
 "check"
 msgstr ""
-"驾驶员监控\n"
-"检查"
 
 #: selfdrive/ui/mici/layouts/settings/toggles.py
 msgid "driving personality"
@@ -2894,11 +2860,9 @@ msgstr "编辑"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/onboarding.py
 msgid ""
-"enable\\n"
+"enable\n"
 "sunnylink"
 msgstr ""
-"启用\n"
-"sunnylink"
 
 #: selfdrive/ui/mici/layouts/settings/network/network_layout.py
 msgid "enable roaming"
@@ -2985,11 +2949,9 @@ msgstr "分"
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid ""
-"make sure comma\\n"
+"make sure comma\n"
 "four can see your face"
 msgstr ""
-"确保comma\n"
-"four能看到您的脸"
 
 #: selfdrive/ui/mici/layouts/settings/network/network_layout.py
 #: system/ui/widgets/network.py
@@ -3131,9 +3093,9 @@ msgstr "正在恢复"
 
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid ""
-"review\\n"
+"review\n"
 "training guide"
-msgstr "查看训练指南"
+msgstr ""
 
 #: selfdrive/ui/layouts/settings/device.py
 msgid "right"
@@ -3262,12 +3224,12 @@ msgstr "sunnypilot 会持续进行校准，很少需要重置。若车辆已通�
 #: selfdrive/ui/layouts/settings/firehose.py
 #: selfdrive/ui/mici/layouts/settings/firehose.py
 msgid ""
-"sunnypilot learns to drive by watching humans, like you, drive.\\n"
-"\\n"
+"sunnypilot learns to drive by watching humans, like you, drive.\n"
+"\n"
 "Firehose Mode allows you to maximize your training data uploads to improve openpilot's driving models. More data means bigger models, which means better Experimental Mode."
 msgstr ""
-"sunnypilot 通过观察像您这样的人类驾驶来学习驾驶。\\n"
-"\\n"
+"sunnypilot 通过观察像您这样的人类驾驶来学习驾驶。\n"
+"\n"
 "Firehose 模式可让您最大化上传训练数据，以改进 openpilot 的驾驶模型。数据越多，模型越大，也就意味着更好的实验模式。"
 
 #: selfdrive/ui/layouts/settings/toggles.py
@@ -3304,17 +3266,15 @@ msgstr "接管控制"
 
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid ""
-"terms &\\n"
+"terms &\n"
 "conditions"
-msgstr "条款与条件"
+msgstr ""
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid ""
-"terms of\\n"
+"terms of\n"
 "service"
 msgstr ""
-"服务\n"
-"条款"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py
 msgid "thanks"
@@ -3375,9 +3335,9 @@ msgstr "更新 sunnypilot"
 
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid ""
-"updater failed\\n"
+"updater failed\n"
 "to respond"
-msgstr "更新器未响应"
+msgstr ""
 
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid "upgrade to prime"
