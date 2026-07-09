@@ -107,7 +107,8 @@ class OpenpilotMetadata:
                                           "github.com/sunnypilot/openpilot",
                                           "github.com/sunnyhaibin/sunnypilot",
                                           "github.com/sunnyhaibin/openpilot",
-                                          "github.com/nanasemai/sunnypilot_c3")
+                                          "github.com/nanasemai/sunnypilot_c3",
+                                          "github.com/nanasemai/openpilot")
 
   @property
   def git_normalized_origin(self) -> str:
@@ -125,7 +126,7 @@ class BuildMetadata:
 
   @property
   def tested_channel(self) -> bool:
-    return self.channel in TESTED_BRANCHES or "nana" in self.channel
+    return self.channel in TESTED_BRANCHES
 
   @property
   def release_channel(self) -> bool:
