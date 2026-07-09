@@ -38,7 +38,10 @@ def update_translations():
         continue
       for filename in filenames:
         if filename.endswith(".py"):
-          files.append(os.path.relpath(os.path.join(root, filename), BASEDIR))
+          rel_path = os.path.relpath(os.path.join(root, filename), BASEDIR)
+          if rel_path.startswith("openpilot/"):
+            rel_path = rel_path[len("openpilot/"):]
+          files.append(rel_path)
 
   # Extract translatable strings from Python files
   entries = extract_strings(files, BASEDIR)
