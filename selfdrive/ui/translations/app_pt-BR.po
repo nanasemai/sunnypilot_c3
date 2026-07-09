@@ -123,6 +123,10 @@ msgstr ""
 msgid "ADD"
 msgstr "ADICIONAR"
 
+#: selfdrive/selfdrived/events.py
+msgid "AEB: Risk of Collision"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/trips.py
 msgid "ALL TIME"
 msgstr ""
@@ -137,6 +141,10 @@ msgstr "Reconhecer Atuação Excessiva"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "Actuator Delay:"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Adaptive Cruise Disabled"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
@@ -259,6 +267,18 @@ msgstr ""
 msgid "Auto Lane Change: Delay with Blind Spot"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "BRAKE!"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "BRAKE!"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "BRAKE!"
+msgstr ""
+
 #: selfdrive/ui/layouts/onboarding.py
 #: selfdrive/ui/sunnypilot/layouts/onboarding.py
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise_sub_layouts/speed_limit_policy.py
@@ -278,6 +298,10 @@ msgstr ""
 msgid "Backup Settings"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Be ready to take over at any time"
+msgstr ""
+
 #: selfdrive/ui/widgets/prime.py
 msgid "Become a comma prime member at connect.comma.ai"
 msgstr "Torne-se membro comma prime em connect.comma.ai"
@@ -286,12 +310,28 @@ msgstr "Torne-se membro comma prime em connect.comma.ai"
 msgid "Become a sponsor of sunnypilot to get early access to sunnylink features when they become available."
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Bookmark Saved"
+msgstr ""
+
 #: selfdrive/ui/widgets/pairing_dialog.py
 msgid "Bookmark connect.comma.ai to your home screen to use it like an app"
 msgstr "Adicione connect.comma.ai à tela inicial para usá-lo como um app"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/visuals.py
 msgid "Bottom"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "CAN Bus Disconnected"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "CAN Bus Disconnected: Check Connections"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "CAN Bus Disconnected: Likely Faulty Cable"
 msgstr ""
 
 #: selfdrive/ui/layouts/settings/device.py
@@ -321,6 +361,38 @@ msgstr "CONECTAR"
 msgid "CONNECTING..."
 msgstr "CONECTANDO..."
 
+#: selfdrive/selfdrived/events.py
+msgid "Calibrating"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Calibration Invalid"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Calibration Invalid: Remount Device & Recalibrate"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Calibration in Progress"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Camera Frame Rate Low"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Camera Frame Rate Low: Reboot Your Device"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Camera Malfunction"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Camera Malfunction: Reboot Your Device"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 #: system/ui/widgets/confirm_dialog.py
 #: system/ui/widgets/keyboard.py
@@ -331,6 +403,14 @@ msgstr "Cancelar"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "Cancel Download"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Cancel Pressed"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Car Detected in Blindspot"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise_sub_layouts/speed_limit_policy.py
@@ -349,6 +429,14 @@ msgstr ""
 msgid "Car Only: Use Speed Limit data only from Car"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Car Unrecognized"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Car in Blindspot"
+msgstr ""
+
 #: system/ui/widgets/network.py
 msgid "Cellular Metered"
 msgstr "Dados móveis limitados"
@@ -358,8 +446,16 @@ msgstr "Dados móveis limitados"
 msgid "Change Language"
 msgstr "Alterar Idioma"
 
+#: selfdrive/selfdrived/events.py
+msgid "Changing Lanes"
+msgstr ""
+
 #: selfdrive/ui/layouts/settings/toggles.py
 msgid "Changing this setting will restart sunnypilot if the car is powered on."
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Check Hardware"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/steering_sub_layouts/mads_settings.py
@@ -407,8 +503,24 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Confirm Lane Change"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Confirm Lane Change"
+msgstr ""
+
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid "Connect to internet to check for updates. sunnypilot won't automatically start until it connects to internet to check for updates."
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Controls Mismatch"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Controls Mismatch"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/device.py
@@ -425,6 +537,22 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Cruise"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Cruise Fault: Restart the Car"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Cruise Fault: Restart the Car"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Cruise Fault: Restart the car to engage"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Cruise Is Off"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
@@ -471,9 +599,41 @@ msgstr ""
 msgid "DISABLED"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "DISENGAGE IMMEDIATELY"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "DISENGAGE IMMEDIATELY"
+msgstr ""
+
 #: selfdrive/ui/layouts/settings/software.py
 msgid "DOWNLOAD"
 msgstr "BAIXAR"
+
+#: selfdrive/selfdrived/events.py
+msgid "Dashcam Mode"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Dashcam Mode"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Dashcam Mode"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Dashcam mode"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Dashcam mode"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Dashcam mode for unsupported car"
+msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/osm.py
 msgid "Database Update"
@@ -514,6 +674,10 @@ msgstr ""
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Device"
 msgstr "Dispositivo"
+
+#: selfdrive/selfdrived/events.py
+msgid "Device Fell Off Mount"
+msgstr ""
 
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid "Device must be registered with the comma.ai backend to pair."
@@ -617,6 +781,10 @@ msgstr ""
 msgid "Distance"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Distraction Level Too High"
+msgstr ""
+
 #: selfdrive/ui/mici/layouts/settings/firehose.py
 msgid "Do all of my segments get pulled in Firehose Mode?"
 msgstr ""
@@ -635,6 +803,10 @@ msgstr ""
 msgid "Dongle ID"
 msgstr "ID do Dongle"
 
+#: selfdrive/selfdrived/events.py
+msgid "Door Open"
+msgstr ""
+
 #: selfdrive/ui/layouts/settings/software.py
 msgid "Download"
 msgstr "Baixar"
@@ -651,6 +823,10 @@ msgstr ""
 msgid "Downloading Maps..."
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Drive to Calibrate"
+msgstr ""
+
 #: selfdrive/ui/layouts/settings/device.py
 msgid "Driver Camera"
 msgstr "Câmera do Motorista"
@@ -659,12 +835,40 @@ msgstr "Câmera do Motorista"
 msgid "Driver Camera Preview"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Driver Distracted"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Driver Distracted"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Driver Distracted"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Driver Unresponsive"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Driver Unresponsive"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/trips.py
 msgid "Drives"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "Driving Model"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Driving Model Lagging"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Driving Model Lagging"
 msgstr ""
 
 #: selfdrive/ui/layouts/settings/toggles.py
@@ -694,6 +898,18 @@ msgstr "MODO EXPERIMENTAL ATIVO"
 
 #: system/ui/sunnypilot/widgets/sunnylink_pairing_dialog.py
 msgid "Early Access: Become a sunnypilot Sponsor"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Electronic Stability Control Active"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Electronic Stability Control Disabled"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Emergency Braking: Risk of Collision"
 msgstr ""
 
 #: selfdrive/ui/layouts/settings/developer.py
@@ -824,6 +1040,10 @@ msgstr ""
 msgid "Engage lateral and longitudinal control with cruise control engagement."
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Ensure road ahead is clear"
+msgstr ""
+
 #: system/ui/widgets/network.py
 msgid "Enter APN"
 msgstr "Digite APN"
@@ -872,6 +1092,10 @@ msgstr ""
 msgid "Excessive %1 actuation detected on your last drive. Please contact support at https://comma.ai/support and share your device's Dongle ID for troubleshooting."
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Excessive Actuation"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/device.py
 msgid "Exit Always Offroad"
 msgstr ""
@@ -906,6 +1130,10 @@ msgstr "ESQUECENDO..."
 
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid "Failed to register with comma.ai backend. It will not connect or upload to comma.ai servers, and receives no support from comma.ai. If this is a device purchased at comma.ai/shop, open a ticket at https://comma.ai/support."
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Fan Malfunction"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
@@ -995,6 +1223,10 @@ msgstr ""
 msgid "GOOD"
 msgstr "BOM"
 
+#: selfdrive/selfdrived/events.py
+msgid "Gear not D"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/developer.py
 msgid "GitHub Runner Service"
 msgstr ""
@@ -1011,9 +1243,25 @@ msgstr ""
 msgid "HIGH"
 msgstr "ALTO"
 
+#: selfdrive/selfdrived/events.py
+msgid "Harness Relay Malfunction"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Harness Relay Malfunction"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Harness Relay Malfunction"
+msgstr ""
+
 #: system/ui/widgets/network.py
 msgid "Hidden Network"
 msgstr "Rede oculta"
+
+#: selfdrive/selfdrived/events.py
+msgid "High CPU Usage"
+msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/trips.py
 msgid "Hours"
@@ -1071,6 +1319,14 @@ msgstr ""
 msgid "Interactivity Timeout"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Invalid LKAS setting"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Invalid LKAS setting"
+msgstr ""
+
 #: system/ui/sunnypilot/widgets/sunnylink_pairing_dialog.py
 msgid "Join our Community Forum at https://community.sunnypilot.ai and reach out to a moderator if you have issues"
 msgstr ""
@@ -1079,8 +1335,28 @@ msgstr ""
 msgid "Joystick Debug Mode"
 msgstr "Modo de Depuração do Joystick"
 
+#: selfdrive/selfdrived/events.py
+msgid "Joystick Mode"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Joystick Mode"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/trips.py
 msgid "KM"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "LKAS Fault: Restart the Car"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "LKAS Fault: Restart the Car"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "LKAS Fault: Restart the car to engage"
 msgstr ""
 
 #: selfdrive/ui/widgets/ssh_key.py
@@ -1092,6 +1368,10 @@ msgstr "CARREGANDO"
 msgid "LTE"
 msgstr "LTE"
 
+#: selfdrive/selfdrived/events.py
+msgid "Lane Departure Detected"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/osm.py
 msgid "Last checked {}"
 msgstr ""
@@ -1100,6 +1380,7 @@ msgstr ""
 msgid "Lateral Acceleration Factor"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
 #: selfdrive/ui/layouts/settings/developer.py
 msgid "Lateral Maneuver Mode"
 msgstr ""
@@ -1114,6 +1395,10 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/steering_sub_layouts/torque_settings.py
 msgid "Less strict settings when using Self-Tune. This allows torqued to be more forgiving when learning values."
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Likely Hardware Issue"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
@@ -1132,9 +1417,26 @@ msgstr ""
 msgid "Long Press Increment"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
 #: selfdrive/ui/layouts/settings/developer.py
 msgid "Longitudinal Maneuver Mode"
 msgstr "Modo de Manobra Longitudinal"
+
+#: selfdrive/selfdrived/events.py
+msgid "Low Battery"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Low Communication Rate Between Processes"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Low Memory"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Low Memory: Reboot Your Device"
+msgstr ""
 
 #: selfdrive/ui/mici/onroad/hud_renderer.py
 #: selfdrive/ui/onroad/hud_renderer.py
@@ -1188,6 +1490,10 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "Model download has started in the background. We suggest resetting calibration. Would you like to do that now?"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Model uncertain at this speed"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
@@ -1375,6 +1681,14 @@ msgid ""
 "%1"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Out of Storage"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Out of Storage"
+msgstr ""
+
 #: selfdrive/ui/layouts/settings/device.py
 msgid "PAIR"
 msgstr "EMPARELHAR"
@@ -1428,6 +1742,10 @@ msgstr "Emparelhe seu dispositivo com o comma connect (connect.comma.ai) e resga
 msgid "Paired"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Parking Brake Engaged"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/steering_sub_layouts/mads_settings.py
 msgid "Pause"
 msgstr ""
@@ -1444,8 +1762,13 @@ msgstr ""
 msgid "Pause: ALC will pause when the brake pedal is pressed."
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
 #: selfdrive/ui/mici/onroad/driver_camera_dialog.py
 msgid "Pay Attention"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Pedal Pressed"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise_sub_layouts/speed_limit_settings.py
@@ -1480,6 +1803,10 @@ msgstr ""
 msgid "Poor visibility detected for driver monitoring. Ensure the device has a clear view of the driver. This can be checked in the device settings. Extreme lighting conditions and/or unconventional mounting positions may also trigger this alert."
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Possible Hardware Issue"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/steering.py
 msgid "Post-Blinker Delay"
 msgstr ""
@@ -1491,6 +1818,22 @@ msgstr "Desligar"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/vehicle/brands/hyundai.py
 msgid "Predictive"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Press Resume"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Press Resume to Exit Brake Hold"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Press Resume to Exit Standstill"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Press Set to Engage"
 msgstr ""
 
 #: system/ui/widgets/network.py
@@ -1542,6 +1885,14 @@ msgstr "REDEFINIR"
 msgid "REVIEW"
 msgstr "REVISAR"
 
+#: selfdrive/selfdrived/events.py
+msgid "Radar Error: Restart the Car"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Radar Temporarily Unavailable"
+msgstr ""
+
 #: system/ui/sunnypilot/widgets/sunnylink_pairing_dialog.py
 msgid "Re-enter the \"sunnylink\" panel to verify sponsorship status"
 msgstr ""
@@ -1568,6 +1919,10 @@ msgstr "Reiniciar Dispositivo"
 msgid "Reboot and Update"
 msgstr "Reiniciar e Atualizar"
 
+#: selfdrive/selfdrived/events.py
+msgid "Reboot your Device"
+msgstr ""
+
 #: selfdrive/ui/layouts/settings/toggles.py
 msgid "Receive alerts to steer back into the lane when your vehicle drifts over a detected lane line without a turn signal activated while driving over 31 mph (50 km/h)."
 msgstr ""
@@ -1584,6 +1939,10 @@ msgstr "Gravar e Enviar Áudio do Microfone"
 msgid "Record and store microphone audio while driving. The audio will be included in the dashcam video in comma connect."
 msgstr "Grave e armazene o áudio do microfone enquanto dirige. O áudio será incluído no vídeo da dashcam no comma connect."
 
+#: selfdrive/selfdrived/events.py
+msgid "Recording Audio Feedback"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "Refresh Model List"
 msgstr ""
@@ -1596,6 +1955,10 @@ msgstr "Regulatório"
 #: selfdrive/ui/layouts/settings/toggles.py
 msgid "Relaxed"
 msgstr "Relaxado"
+
+#: selfdrive/selfdrived/events.py
+msgid "Release Brake to Engage"
+msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/steering_sub_layouts/mads_settings.py
 msgid "Remain Active"
@@ -1612,6 +1975,10 @@ msgstr "Acesso remoto"
 #: selfdrive/ui/widgets/prime.py
 msgid "Remote snapshots"
 msgstr "Capturas remotas"
+
+#: selfdrive/selfdrived/events.py
+msgid "Remount Detected: Recalibrating"
+msgstr ""
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid "Remount if your face is blocked, or driver monitoring has difficulty tracking your face."
@@ -1643,6 +2010,36 @@ msgstr ""
 msgid "Restore Settings"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Resume Driving Manually"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Reverse"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Reverse"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Reverse"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid ""
+"Reverse\n"
+"Gear"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Reverse Gear"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Reverse Gear"
+msgstr ""
+
 #: selfdrive/ui/layouts/settings/device.py
 msgid "Review Training Guide"
 msgstr "Revisar Guia de Treinamento"
@@ -1657,6 +2054,10 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/visuals.py
 msgid "Right & Bottom"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Risk of Collision"
 msgstr ""
 
 #: selfdrive/ui/layouts/settings/software.py
@@ -1711,6 +2112,14 @@ msgstr ""
 msgid "Search your vehicle"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Seatbelt Unlatched"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Security Key Not Available"
+msgstr ""
+
 #: system/ui/widgets/option_dialog.py
 msgid "Select"
 msgstr "Selecione"
@@ -1750,6 +2159,18 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/steering_sub_layouts/torque_settings.py
 msgid "Self-Tune"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Selfdrive Process Lagging: Reboot Your Device"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Sensor Data Invalid"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Sensor Data Invalid"
 msgstr ""
 
 #: selfdrive/ui/layouts/settings/device.py
@@ -1797,6 +2218,10 @@ msgstr ""
 msgid "Show an indicator on the left side of the screen to display real-time vehicle acceleration and deceleration. This displays what the car is currently doing, not what the planner is requesting."
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Slow down to engage"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise.py
 msgid "Smart Cruise Control - Map"
 msgstr ""
@@ -1833,6 +2258,14 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/cruise_sub_layouts/speed_limit_policy.py
 msgid "Speed Limit Source"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Speed Too High"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Speed too low"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/visuals.py
@@ -1874,6 +2307,22 @@ msgstr ""
 msgid "State"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Steer Left"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Steer Left to Start Lane Change Once Safe"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Steer Right"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Steer Right to Start Lane Change Once Safe"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Steering"
 msgstr ""
@@ -1882,8 +2331,32 @@ msgstr ""
 msgid "Steering Arc"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Steering Assist Temporarily Unavailable"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/steering_sub_layouts/mads_settings.py
 msgid "Steering Mode on Brake Pedal"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Steering Pressed"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Steering Temporarily Unavailable"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Stock AEB: Risk of Collision"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Stock AEB: Risk of Collision"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Stock LKAS: Lane Departure Detected"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/vehicle/brands/subaru.py
@@ -1898,12 +2371,28 @@ msgstr ""
 msgid "Stop and Go for Manual Parking Brake (Beta)"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "System Initializing"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "System Overheated"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "System Overheated"
+msgstr ""
+
 #: selfdrive/ui/onroad/alert_renderer.py
 msgid "System Unresponsive"
 msgstr "Sistema sem resposta"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/software.py
 msgid "System reboot required for changes to take effect. Reboot now?"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "TAKE CONTROL"
 msgstr ""
 
 #: selfdrive/ui/onroad/alert_renderer.py
@@ -1916,6 +2405,10 @@ msgstr "TEMP."
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "THANKS ♥"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Take Control"
 msgstr ""
 
 #: selfdrive/selfdrived/alerts_offroad.json
@@ -2038,6 +2531,14 @@ msgstr ""
 msgid "Total Delay:"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Touch Steering Wheel"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Touch Steering Wheel: No Face Detected"
+msgstr ""
+
 #: selfdrive/ui/mici/onroad/driver_camera_dialog.py
 msgid "Touch Wheel"
 msgstr ""
@@ -2048,6 +2549,10 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Trips"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Turn Exceeds Steering Limit"
 msgstr ""
 
 #: selfdrive/ui/layouts/settings/developer.py
@@ -2061,6 +2566,14 @@ msgstr "DESINSTALAR"
 #: selfdrive/ui/layouts/home.py
 msgid "UPDATE"
 msgstr "ATUALIZAR"
+
+#: selfdrive/selfdrived/events.py
+msgid "USB Error: Reboot Your Device"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "USB Error: Reboot Your Device"
+msgstr ""
 
 #: selfdrive/selfdrived/alerts_offroad.json
 msgid ""
@@ -2083,6 +2596,18 @@ msgstr "Desinstalar"
 #: selfdrive/ui/layouts/sidebar.py
 msgid "Unknown"
 msgstr "Desconhecido"
+
+#: selfdrive/selfdrived/events.py
+msgid "Unknown Vehicle Variant"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Unknown Vehicle Variant"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Unknown Vehicle Variant"
+msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/vehicle/platform_selector.py
 msgid "Unrecognized Vehicle"
@@ -2134,6 +2659,22 @@ msgstr "VER"
 msgid "Vehicle"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Vehicle Sensors Calibrating"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Vehicle Sensors Calibrating"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Vehicle Sensors Invalid"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Vehicle Steering Time Limit"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/developer.py
 msgid "View the error log for sunnypilot crashes."
 msgstr ""
@@ -2144,6 +2685,10 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/settings.py
 msgid "Visuals"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "WARNING: This branch is not tested"
 msgstr ""
 
 #: selfdrive/ui/onroad/alert_renderer.py
@@ -2502,6 +3047,22 @@ msgstr "deixe em branco para configuração automática"
 msgid "left"
 msgstr "à esquerda"
 
+#: selfdrive/selfdrived/events.py
+msgid "locationd Permanent Error"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "locationd Permanent Error"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "locationd Permanent Error"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "locationd Temporary Error"
+msgstr ""
+
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid "looking for driver"
 msgstr ""
@@ -2564,6 +3125,10 @@ msgstr ""
 msgid "now"
 msgstr "agora"
 
+#: selfdrive/selfdrived/events.py
+msgid "openpilot Canceled"
+msgstr ""
+
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid "or go to https://sunnypilot.ai/terms"
 msgstr ""
@@ -2580,6 +3145,22 @@ msgstr ""
 #: selfdrive/ui/mici/layouts/settings/device.py
 #: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py
 msgid "paired"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "paramsd Permanent Error"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "paramsd Permanent Error"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "paramsd Permanent Error"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "paramsd Temporary Error"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py
@@ -2808,6 +3389,10 @@ msgstr ""
 msgid "swipe for QR code"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "take control"
+msgstr ""
+
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid ""
 "terms &\n"
@@ -2826,6 +3411,10 @@ msgstr ""
 
 #: selfdrive/ui/mici/layouts/settings/settings.py
 msgid "toggles"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "turn exceeds limit"
 msgstr ""
 
 #: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py

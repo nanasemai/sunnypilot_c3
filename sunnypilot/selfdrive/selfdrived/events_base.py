@@ -7,6 +7,7 @@ from cereal import log, car
 import cereal.messaging as messaging
 from openpilot.common.realtime import DT_CTRL
 from openpilot.system.hardware import HARDWARE
+from openpilot.system.ui.lib.multilang import tr
 
 AlertSize = log.SelfdriveState.AlertSize
 AlertStatus = log.SelfdriveState.AlertStatus
@@ -50,8 +51,8 @@ class Alert:
                duration: float,
                creation_delay: float = 0.):
 
-    self.alert_text_1 = alert_text_1
-    self.alert_text_2 = alert_text_2
+    self.alert_text_1 = tr(alert_text_1)
+    self.alert_text_2 = tr(alert_text_2)
     self.alert_status = alert_status
     self.alert_size = alert_size
     self.priority = priority
