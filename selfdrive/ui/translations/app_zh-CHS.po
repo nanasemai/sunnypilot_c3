@@ -3740,7 +3740,7 @@ msgstr "稍后重试。"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "Dongle ID"
-msgstr "加密狗ID"
+msgstr "Dongle ID"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "Not Sponsor"
@@ -3768,7 +3768,7 @@ msgstr "，但当您准备回来时，我们会在这里等待。"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "Sunnylink Dongle ID not found. "
-msgstr "未找到Sunnylink加密狗ID。"
+msgstr "未找到Sunnylink Dongle ID。"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "This may be due to weak internet connection or sunnylink registration issue. "
