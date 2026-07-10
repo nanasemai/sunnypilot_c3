@@ -1627,6 +1627,9 @@ msgid ""
 "\n"
 "%1"
 msgstr ""
+"OpenStreetMap数据库已过期。如果您希望继续使用OpenStreetMap数据进行增强速度控制和道路名称显示，必须下载新地图。\n"
+"\n"
+"%1"
 
 #: selfdrive/selfdrived/events.py
 msgid "Out of Storage"
