@@ -656,6 +656,8 @@ msgid ""
 "Device will automatically shutdown after set time once the engine is turned off.\n"
 "(30h is the default)"
 msgstr ""
+"发动机关闭后，设备将在设定时间后自动关机。\n"
+"（默认30小时）"
 
 #: selfdrive/ui/sunnypilot/layouts/onboarding.py
 msgid "Disable"
@@ -1128,6 +1130,9 @@ msgid ""
 "\n"
 "Firehose Mode can also work while you're driving if connected to a hotspot or unlimited SIM card."
 msgstr ""
+"为达到最佳效果，请每周将设备带回家并连接到良好的 USB-C 适配器和 Wi-Fi。\n"
+"\n"
+"如果连接到热点或无限流量 SIM 卡，Firehose 模式也可以在驾驶时工作。"
 
 #: selfdrive/ui/layouts/settings/firehose.py
 msgid ""
@@ -1146,6 +1151,20 @@ msgid ""
 "\n"
 "Does it matter which software I run? Yes, only upstream openpilot (and particular forks) are able to be used for training."
 msgstr ""
+"为达到最佳效果，请每周将设备带回家并连接到良好的 USB-C 适配器和 Wi-Fi。\n"
+"\n"
+"如果连接到热点或无限流量 SIM 卡，Firehose 模式也可以在驾驶时工作。\n"
+"\n"
+"\n"
+"常见问题解答\n"
+"\n"
+"驾驶方式或地点重要吗？不重要，正常驾驶即可。\n"
+"\n"
+"我的所有驾驶片段都会在 Firehose 模式下被提取吗？不会，我们会选择性地提取您的部分片段。\n"
+"\n"
+"什么是好的 USB-C 适配器？任何快速手机或笔记本电脑充电器都可以。\n"
+"\n"
+"使用什么软件重要吗？重要，只有上游 openpilot（以及特定分支）才能用于训练。"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "For secure backup, restore, and remote configuration"
@@ -1947,6 +1966,8 @@ msgid ""
 "Reverse\n"
 "Gear"
 msgstr ""
+"倒车\n"
+"档位"
 
 #: selfdrive/selfdrived/events.py
 msgid "Reverse Gear"
@@ -2393,6 +2414,9 @@ msgid ""
 "\n"
 "Are you sure you want to delete all maps?"
 msgstr ""
+"这将删除所有已下载的地图\n"
+"\n"
+"确定要删除所有地图吗？"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/models.py
 msgid "This will delete ALL downloaded models from the cache except the currently active model. Are you sure?"
@@ -2476,6 +2500,8 @@ msgid ""
 "Unable to download updates\n"
 "%1"
 msgstr ""
+"无法下载更新\n"
+"%1"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "Unable to restore the settings, try again later."
@@ -2696,6 +2722,8 @@ msgid ""
 "accept\n"
 "terms"
 msgstr ""
+"接受\n"
+"条款"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/models.py
 msgid "active model"
@@ -2781,6 +2809,8 @@ msgid ""
 "decline &\n"
 "uninstall"
 msgstr ""
+"拒绝 &\n"
+"卸载"
 
 #: selfdrive/ui/mici/layouts/settings/network/network_layout.py
 #: system/ui/widgets/network.py
@@ -2805,6 +2835,8 @@ msgid ""
 "disable\n"
 "sunnylink"
 msgstr ""
+"禁用\n"
+"sunnylink"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/settings.py
 msgid "disengage to enable always offroad"
@@ -2839,6 +2871,8 @@ msgid ""
 "driver\n"
 "camera preview"
 msgstr ""
+"驾驶员\n"
+"摄像头预览"
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid "driver camera data"
@@ -2849,6 +2883,8 @@ msgid ""
 "driver monitoring\n"
 "check"
 msgstr ""
+"驾驶员监控\n"
+"检查"
 
 #: selfdrive/ui/mici/layouts/settings/toggles.py
 msgid "driving personality"
@@ -2863,6 +2899,8 @@ msgid ""
 "enable\n"
 "sunnylink"
 msgstr ""
+"启用\n"
+"sunnylink"
 
 #: selfdrive/ui/mici/layouts/settings/network/network_layout.py
 msgid "enable roaming"
@@ -2952,6 +2990,8 @@ msgid ""
 "make sure comma\n"
 "four can see your face"
 msgstr ""
+"确保 comma\n"
+"four 可以看到您的脸"
 
 #: selfdrive/ui/mici/layouts/settings/network/network_layout.py
 #: system/ui/widgets/network.py
@@ -3096,6 +3136,8 @@ msgid ""
 "review\n"
 "training guide"
 msgstr ""
+"查看\n"
+"训练指南"
 
 #: selfdrive/ui/layouts/settings/device.py
 msgid "right"
@@ -3269,12 +3311,16 @@ msgid ""
 "terms &\n"
 "conditions"
 msgstr ""
+"条款 &\n"
+"条件"
 
 #: selfdrive/ui/mici/layouts/onboarding.py
 msgid ""
 "terms of\n"
 "service"
 msgstr ""
+"服务\n"
+"条款"
 
 #: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py
 msgid "thanks"
@@ -3338,6 +3384,8 @@ msgid ""
 "updater failed\n"
 "to respond"
 msgstr ""
+"更新器失败\n"
+"响应"
 
 #: selfdrive/ui/mici/layouts/settings/device.py
 msgid "upgrade to prime"
