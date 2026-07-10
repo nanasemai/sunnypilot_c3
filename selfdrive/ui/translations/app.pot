@@ -3432,3 +3432,39 @@ msgstr ""
 msgid "Disable your car's stock LKAS to engage"
 msgstr ""
 
+#: selfdrive/ui/sunnypilot/onroad/circular_alerts.py
+msgid ""
+"GREEN\n"
+"LIGHT"
+msgstr ""
+
+#: selfdrive/ui/sunnypilot/onroad/circular_alerts.py
+msgid ""
+"LEAD VEHICLE\n"
+"DEPARTING"
+msgstr ""
+
+#: selfdrive/ui/sunnypilot/onroad/circular_alerts.py
+msgid "STOPPED"
+msgstr ""
+
+#: selfdrive/ui/sunnypilot/onroad/smart_cruise_control.py
+msgid "SCC-V"
+msgstr ""
+
+#: selfdrive/ui/sunnypilot/onroad/smart_cruise_control.py
+msgid "SCC-M"
+msgstr ""
+
+#: selfdrive/ui/sunnypilot/onroad/speed_limit.py
+msgid "SPEED"
+msgstr ""
+
+#: selfdrive/ui/sunnypilot/onroad/speed_limit.py
+msgid "LIMIT"
+msgstr ""
+
+#: selfdrive/ui/sunnypilot/onroad/speed_limit.py
+msgid "AHEAD"
+msgstr ""
+

@@ -3503,3 +3503,43 @@ msgstr ""
 "\n"
 "%1"
 
+#: selfdrive/ui/sunnypilot/onroad/circular_alerts.py
+msgid ""
+"GREEN\n"
+"LIGHT"
+msgstr ""
+"绿灯\n"
+"亮起"
+
+#: selfdrive/ui/sunnypilot/onroad/circular_alerts.py
+msgid ""
+"LEAD VEHICLE\n"
+"DEPARTING"
+msgstr ""
+"前车\n"
+"驶离"
+
+#: selfdrive/ui/sunnypilot/onroad/circular_alerts.py
+msgid "STOPPED"
+msgstr "已停止"
+
+#: selfdrive/ui/sunnypilot/onroad/smart_cruise_control.py
+msgid "SCC-V"
+msgstr "SCC-V"
+
+#: selfdrive/ui/sunnypilot/onroad/smart_cruise_control.py
+msgid "SCC-M"
+msgstr "SCC-M"
+
+#: selfdrive/ui/sunnypilot/onroad/speed_limit.py
+msgid "SPEED"
+msgstr "限速"
+
+#: selfdrive/ui/sunnypilot/onroad/speed_limit.py
+msgid "LIMIT"
+msgstr "限制"
+
+#: selfdrive/ui/sunnypilot/onroad/speed_limit.py
+msgid "AHEAD"
+msgstr "前方"
+
