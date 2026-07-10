@@ -3719,3 +3719,103 @@ msgstr "滑动以忘记"
 msgid "searching for networks"
 msgstr "正在搜索网络"
 
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "🚀 sunnylink 🚀"
+msgstr "🚀 sunnylink 🚀"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Backup"
+msgstr "备份"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Restore"
+msgstr "恢复"
+
+#: selfdrive/ui/sunnypilot/mici/layouts/sunnylink.py
+msgid "try again later."
+msgstr "稍后重试。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Dongle ID"
+msgstr "加密狗ID"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Not Sponsor"
+msgstr "非赞助者"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Paired"
+msgstr "已配对"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "THANKS ♥"
+msgstr "谢谢 ♥"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Welcome back!! We're excited to see you've enabled sunnylink again!"
+msgstr "欢迎回来！我们很高兴看到您再次启用了sunnylink！"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Not going to lie, it's sad to see you disabled sunnylink"
+msgstr "说实话，看到您禁用了sunnylink，我们感到很遗憾"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid ", but we'll be here when you're ready to come back."
+msgstr "，但当您准备回来时，我们会在这里等待。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Sunnylink Dongle ID not found. "
+msgstr "未找到Sunnylink加密狗ID。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "This may be due to weak internet connection or sunnylink registration issue. "
+msgstr "这可能是由于网络连接不稳定或sunnylink注册问题导致的。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Please reboot and try again."
+msgstr "请重启并重试。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Settings backup completed."
+msgstr "设置备份完成。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Unable to restore the settings, try again later."
+msgstr "无法恢复设置，请稍后重试。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Settings restored. Confirm to restart the interface."
+msgstr "设置已恢复。确认重启界面。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "OK"
+msgstr "确定"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Enable sunnylink uploader (infrastructure test)"
+msgstr "启用sunnylink上传器（基础设施测试）"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Enable sunnylink uploader to allow sunnypilot to upload your driving data to sunnypilot servers. "
+msgstr "启用sunnylink上传器，允许sunnypilot将您的驾驶数据上传到sunnypilot服务器。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "(Only for highest tiers, and does NOT bring ANY benefit to you yet. We are just testing data volume.)"
+msgstr "（仅适用于最高等级用户，目前不会为您带来任何好处。我们只是在测试数据量。）"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Pair your GitHub account to grant your device sponsor benefits, including API access on sunnylink."
+msgstr "配对您的GitHub账户，为您的设备授予赞助者权益，包括sunnylink上的API访问权限。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "This is the master switch, it will allow you to cutoff any sunnylink requests should you want to do that."
+msgstr "这是主开关，启用后您可以随时切断任何sunnylink请求。"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "For secure backup, restore, and remote configuration"
+msgstr "用于安全备份、恢复和远程配置"
+
+#: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
+msgid "Sponsorship isn't required for basic backup/restore"
+msgstr "基本备份/恢复功能不需要赞助"
+
