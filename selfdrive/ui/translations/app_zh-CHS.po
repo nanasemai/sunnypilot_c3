@@ -713,7 +713,7 @@ msgstr "显示"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/visuals.py
 msgid "Display Metrics Below Chevron"
-msgstr "在雪佛龙标记下方显示指标"
+msgstr "在下拉箭头下方显示指标数据"
 
 #: selfdrive/ui/sunnypilot/layouts/settings/visuals.py
 msgid "Display Road Name"
