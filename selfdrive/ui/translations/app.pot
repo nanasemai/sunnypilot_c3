@@ -561,6 +561,10 @@ msgstr ""
 msgid "Sponsorship isn't required for basic backup/restore"
 msgstr ""
 
+#: selfdrive/ui/body/layouts/onroad.py
+msgid "turn on ignition to use"
+msgstr ""
+
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "Enable sunnylink uploader to allow sunnypilot to upload your driving data to sunnypilot servers. "
 msgstr ""
@@ -3740,5 +3744,9 @@ msgstr ""
 
 #: selfdrive/ui/sunnypilot/layouts/settings/sunnylink.py
 msgid "Sponsorship isn't required for basic backup/restore"
+msgstr ""
+
+#: selfdrive/ui/body/layouts/onroad.py
+msgid "turn on ignition to use"
 msgstr ""
 

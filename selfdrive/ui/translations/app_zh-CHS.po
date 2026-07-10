@@ -3819,3 +3819,7 @@ msgstr "用于安全备份、恢复和远程配置"
 msgid "Sponsorship isn't required for basic backup/restore"
 msgstr "基本备份/恢复功能不需要赞助"
 
+#: selfdrive/ui/body/layouts/onroad.py
+msgid "turn on ignition to use"
+msgstr "请启动车辆以使用"
+
