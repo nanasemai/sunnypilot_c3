@@ -3384,3 +3384,51 @@ msgstr ""
 msgid "Reverse"
 msgstr ""
 
+#: selfdrive/selfdrived/events.py
+msgid "Steering misalignment detected"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Steer ratio mismatch"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Abnormal tire stiffness"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Posenet Speed Invalid"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Process Not Running"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Communication Issue Between Processes"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Low Communication Rate Between Processes"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "System Lagging"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Toggle stock LKAS on or off to engage"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Switch to Traffic-Aware Cruise Control to engage"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Enable your car's LKAS to engage"
+msgstr ""
+
+#: selfdrive/selfdrived/events.py
+msgid "Disable your car's stock LKAS to engage"
+msgstr ""
+

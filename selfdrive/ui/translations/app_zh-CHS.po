@@ -3389,3 +3389,69 @@ msgstr "✓ 已订阅"
 msgid "🔥 Firehose Mode 🔥"
 msgstr "🔥 Firehose 模式 🔥"
 
+#: selfdrive/selfdrived/events.py
+msgid "Steering misalignment detected"
+msgstr "检测到转向偏移"
+
+#: selfdrive/selfdrived/events.py
+msgid "Steer ratio mismatch"
+msgstr "转向比不匹配"
+
+#: selfdrive/selfdrived/events.py
+msgid "Abnormal tire stiffness"
+msgstr "轮胎刚度异常"
+
+#: selfdrive/selfdrived/events.py
+msgid "Posenet Speed Invalid"
+msgstr "Posenet速度无效"
+
+#: selfdrive/selfdrived/events.py
+msgid "Process Not Running"
+msgstr "进程未运行"
+
+#: selfdrive/selfdrived/events.py
+msgid "Communication Issue Between Processes"
+msgstr "进程间通信问题"
+
+#: selfdrive/selfdrived/events.py
+msgid "Low Communication Rate Between Processes"
+msgstr "进程间通信速率低"
+
+#: selfdrive/selfdrived/events.py
+msgid "System Lagging"
+msgstr "系统卡顿"
+
+#: selfdrive/selfdrived/events.py
+msgid "Toggle stock LKAS on or off to engage"
+msgstr "打开或关闭原厂LKAS以启用"
+
+#: selfdrive/selfdrived/events.py
+msgid "Switch to Traffic-Aware Cruise Control to engage"
+msgstr "切换到交通感知巡航控制以启用"
+
+#: selfdrive/selfdrived/events.py
+msgid "Enable your car's LKAS to engage"
+msgstr "启用车辆的LKAS以启用"
+
+#: selfdrive/selfdrived/events.py
+msgid "Disable your car's stock LKAS to engage"
+msgstr "禁用车辆的原厂LKAS以启用"
+
+#: selfdrive/selfdrived/alerts_offroad.json
+msgid ""
+"Unable to download updates\n"
+"%1"
+msgstr ""
+"无法下载更新\n"
+"%1"
+
+#: selfdrive/selfdrived/alerts_offroad.json
+msgid ""
+"OpenStreetMap database is out of date. New maps must be downloaded if you wish to continue using OpenStreetMap data for Enhanced Speed Control and road name display.\n"
+"\n"
+"%1"
+msgstr ""
+"OpenStreetMap数据库已过期。如果您希望继续使用OpenStreetMap数据进行增强速度控制和道路名称显示，必须下载新地图。\n"
+"\n"
+"%1"
+
